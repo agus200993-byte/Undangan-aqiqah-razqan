@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="id"><head><!-- frame-runtime --><!-- /frame-runtime -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Undangan Razqan El Zaydan Ammar</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&amp;family=Pinyon+Script&amp;family=DM+Sans:wght@400;500;700&amp;family=Amiri:wght@400;700&amp;family=Fredoka:wght@400;600&amp;family=Playfair+Display:ital,wght@0,500;0,700;1,500&amp;display=swap">
+<style>
+:root{--bg:#f4efe8;--fg:#2a2420;--card:#fffdf9;--line:#ddd2c3;--ac:#8a3b2e;--mut:#7a6e63;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1815;--fg:#f0e9df;--card:#26221e;--line:#3b352f;--ac:#e0917f;--mut:#a89c8f}}
+:root[data-theme="dark"]{--bg:#1b1815;--fg:#f0e9df;--card:#26221e;--line:#3b352f;--ac:#e0917f;--mut:#a89c8f}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 'DM Sans',system-ui,sans-serif}
+.app{max-width:1000px;margin:0 auto;padding:16px;display:grid;gap:20px;grid-template-columns:1fr}
+h1{font:700 26px 'Cormorant Garamond',Georgia,serif;margin:4px 0 0}
+.sub{color:var(--mut);margin:0 0 8px}
+.tabs{display:flex;gap:8px}.tabs button{flex:1}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+label{display:block;font-weight:500;margin:12px 0 4px}
+input,textarea,select{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);font:inherit}
+textarea{min-height:80px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+button{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--fg);padding:10px 14px;border-radius:8px}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.pri{background:var(--ac);color:var(--bg);border-color:var(--ac);font-weight:700}
+.tabs .on{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+.themes{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.themes button{padding:8px 4px;font-size:12px;border-width:2px}
+.themes button.on{border-color:var(--ac)}
+.sw{display:block;height:24px;border-radius:5px;margin-bottom:5px;border:1px solid var(--line)}
+.mus{display:flex;gap:8px}.mus select{flex:1}
+.hint{color:var(--mut);font-size:13px;margin:4px 0 0}
+.hid{display:none!important}
+body.v-prev .panel.ed{display:none}
+body.v-edit .pv{display:none}
+@media(min-width:860px){.app{grid-template-columns:1fr 400px;align-items:start}.tabs{display:none}body.v-prev .panel.ed,body.v-edit .pv{display:block}.pv{position:sticky;top:16px}}
+.frame{position:relative;height:min(76vh,680px);max-width:400px;margin:0 auto;border-radius:26px;overflow:hidden;border:6px solid var(--fg);background:var(--t-bg);--t-bg:#fbf5e6;--t-ink:#3b2f1e;--t-ac:#b08a35;--t-card:#fffaf0}
+.pv .acts{display:flex;gap:8px;max-width:400px;margin:10px auto 0}.pv .acts button{flex:1}
+.scroll{height:100%;overflow-y:auto;background:var(--t-bg);color:var(--t-ink);font-family:'Cormorant Garamond',Georgia,serif;text-align:center}
+.sec{padding:44px 24px;border-bottom:1px solid color-mix(in srgb,var(--t-ac) 35%,transparent)}
+.script{font:400 44px/1.15 'Pinyon Script',cursive;color:var(--t-ac);margin:8px 0;overflow-wrap:anywhere}
+.sec h2{font:700 22px 'Cormorant Garamond',serif;margin:0 0 10px;color:var(--t-ac)}
+.sec p{font-size:18px;margin:6px 0;line-height:1.5}
+.ph{display:none;object-fit:cover;border-radius:999px 999px 14px 14px;border:3px solid var(--t-ac);margin:10px auto}
+.ph.on{display:block}
+#cvP{width:120px;height:150px}#hP{width:170px;height:215px}
+.cover{position:absolute;inset:0;z-index:5;background:var(--t-bg);color:var(--t-ink);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;font-family:'Cormorant Garamond',Georgia,serif;transition:transform .9s cubic-bezier(.7,0,.2,1);border:10px double var(--t-ac)}
+.cover.open{transform:translateY(-105%)}
+.cover .script{font-size:52px}
+.cover p{font-size:18px;margin:0}
+.em{font-size:34px}
+.cover button{margin-top:20px;background:var(--t-ac);color:var(--t-bg);border-color:var(--t-ac);font-weight:700;border-radius:99px;padding:12px 26px}
+.cd{display:flex;gap:8px;justify-content:center;margin-top:14px}
+.cd div{background:var(--t-card);border:1px solid var(--t-ac);border-radius:10px;padding:8px 0;width:68px}
+.cd b{display:block;font-size:26px}.cd span{font-size:13px}
+.frame .cbtn{background:var(--t-ac);color:var(--t-bg);border:0;border-radius:99px;padding:9px 18px;font-weight:700;margin-top:12px}
+.frame input,.frame select,.frame textarea{background:var(--t-card);color:var(--t-ink);border-color:var(--t-ac);margin:4px 0;font-family:'DM Sans',sans-serif}
+.wish{background:var(--t-card);border-left:3px solid var(--t-ac);padding:8px 12px;margin:8px 0;text-align:left;font-size:16px;border-radius:4px}
+.wish small{display:block;opacity:.7}
+.mbtn{position:absolute;right:12px;bottom:12px;z-index:6;width:44px;height:44px;border-radius:50%;padding:0;background:var(--t-ac);color:var(--t-bg);border:0;font-size:18px;display:none}
+.mbtn.show{display:block}
+@keyframes spin{to{transform:rotate(360deg)}}
+.mbtn.play{animation:spin 4s linear infinite}
+@media(prefers-reduced-motion:reduce){.cover{transition:none}.mbtn.play{animation:none}}
+body.guest .panel.ed,body.guest .tabs,body.guest h1,body.guest .sub,body.guest .acts{display:none}
+body.guest .app{display:block;padding:0;max-width:none}
+body.guest .pv{display:block;position:static}
+body.guest .frame{height:100dvh;max-width:480px;border:0;border-radius:0}
+.lk{display:flex;gap:6px;margin-top:10px}.lk button{white-space:nowrap}
+.il button{display:block;width:100%;text-align:left;margin-top:6px}
+.frame{background:var(--t-g,var(--t-bg))}
+.scroll,.cover{font-family:var(--t-bf,'Cormorant Garamond',Georgia,serif)}
+.scroll{background:var(--t-pat,transparent);background-size:var(--t-ps,auto)}
+.cover{background:var(--t-g,var(--t-bg))}
+.cover>*{position:relative;z-index:1}
+.cover::before{content:'';position:absolute;inset:6px;border:1px solid var(--t-ac);background:var(--t-pat,none);background-size:var(--t-ps,auto);z-index:0;pointer-events:none}
+.cover::after{content:var(--t-orn);position:absolute;top:18px;left:0;right:0;text-align:center;color:var(--t-ac);font-size:18px}
+.sec{border-bottom:0}
+.sec::after{content:"──  " var(--t-orn) "  ──";display:block;margin-top:34px;color:var(--t-ac);font-size:15px;opacity:.85}
+.sec:last-child::after{content:none}
+.sec h2{font-family:var(--t-hf,'Cormorant Garamond',serif);font-size:24px}
+.script{font-family:var(--t-sc,'Pinyon Script',cursive);font-size:var(--t-fs,44px);font-weight:var(--t-fw,400)}
+.cover .script{font-size:var(--t-cfs,52px)}
+.ph{box-shadow:0 0 0 6px var(--t-bg),0 0 0 7px var(--t-ac)}
+.cd div{box-shadow:0 6px 16px -10px var(--t-ac)}
+.cover button{box-shadow:0 10px 22px -10px var(--t-ac)}
+.msq{display:none;color:var(--t-ac)}
+.mq .msq{display:block;width:100%;height:auto}
+.cover>.msq{position:absolute;left:0;right:0;bottom:0;opacity:.3;z-index:0}
+.sec>.msq{max-width:260px;margin:0 auto 10px;opacity:.75}
+.sec.pb{background-size:cover;background-position:center;color:#fff}
+.sec.pb h2,.sec.pb p{color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.55)}
+.sec.pb::after{color:#fff}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gal img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:999px 999px 12px 12px;border:2px solid var(--t-ac)}
+.ths{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.th{position:relative;width:64px;height:80px}
+.th img{width:100%;height:100%;object-fit:cover;border-radius:999px 999px 8px 8px;border:2px solid var(--line);cursor:pointer}
+.th.on img{border-color:var(--ac)}
+.th.on::after{content:'Latar';position:absolute;left:0;right:0;bottom:-2px;text-align:center;font-size:10px;background:var(--ac);color:var(--bg);border-radius:4px}
+.th button{position:absolute;top:-6px;right:-6px;width:22px;height:22px;padding:0;border-radius:50%;font-size:11px}
+.orns{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.orns button{border-width:2px;padding:6px;font-size:12px}
+.orns button.on{border-color:var(--ac)}
+.osv{display:block;width:100%;height:auto;color:var(--ac);margin-bottom:2px}
+.sal{font-style:italic;font-size:19px;color:var(--t-ac);margin:0 0 10px}
+.sal:empty,.qt:empty{display:none}
+.cover>.crn{position:absolute;width:62px;height:62px;color:var(--t-ac);z-index:1;opacity:.9}
+.cover>.c1{top:14px;left:14px}.cover>.c2{top:14px;right:14px;transform:scaleX(-1)}
+.cover>.c3{bottom:14px;left:14px;transform:scaleY(-1)}.cover>.c4{bottom:14px;right:14px;transform:scale(-1)}
+.sec .qt div{margin:4px 0}
+.sec .qt .ar{direction:rtl;font-family:'Amiri','Noto Naskh Arabic','Traditional Arabic',serif;font-style:normal;font-size:25px;line-height:2;margin:16px 0 4px}
+.sec .qt>:first-child{margin-top:0}
+.sec .qt{font-style:italic;font-size:17px;white-space:pre-line;border-top:1px solid color-mix(in srgb,var(--t-ac) 45%,transparent);margin-top:18px;padding-top:14px}
+</style>
+<script>window.__INV={"type":"aqiqah","n1":"Razqan El Zaydan Ammar","n2":"","xx":"Bpk. Agustiar & Ibu Rani Sagita","dt":"2026-12-01","tm":"11:30","pl":"Desa Tampak","ms":"Atas karunia kelahiran buah hati kami, kami mengundang Anda untuk hadir dan mendoakan agar ia tumbuh menjadi anak yang saleh.","theme":"hitam","phd":[],"bg":0,"orn":"kubah","rel":"islam","qt":"كُلُّ غُلَامٍ رَهِينَةٌ بِعَقِيقَتِهِ، تُذْبَحُ عَنْهُ يَوْمَ سَابِعِهِ، وَيُحْلَقُ، وَيُسَمَّى\n“Setiap anak tergadai dengan aqiqahnya, disembelih (hewan) pada hari ketujuh kelahirannya, dicukur rambutnya, dan diberi nama.” (HR. Abu Dawud dan Tirmidzi)","ca":"","wa":"","guest":"","song":"0","musicId":"","musicName":"","music":"","t":1795330185658}</script></head>
+<body class="v-edit">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<g id="oc" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="-12" y="-12" width="24" height="24"></rect><rect x="-12" y="-12" width="24" height="24" transform="rotate(45)"></rect><circle r="3" fill="currentColor"></circle></g>
+</defs>
+<symbol id="o-gapura" viewBox="0 0 300 110"><g fill="none" stroke="currentColor"><path d="M72 104V58Q72 14 150 14Q228 14 228 58V104" stroke-width="5"></path><path d="M86 104V60Q86 28 150 28Q214 28 214 60V104" stroke-width="1.5"></path></g><use href="#fl" transform="translate(74,60) scale(.8)"></use><use href="#fl" transform="translate(84,36) scale(.8)"></use><use href="#fl" transform="translate(108,20) scale(.8)"></use><use href="#fl" transform="translate(150,14)"></use><use href="#fl" transform="translate(192,20) scale(.8)"></use><use href="#fl" transform="translate(216,36) scale(.8)"></use><use href="#fl" transform="translate(226,60) scale(.8)"></use><use href="#fl" transform="translate(72,92)"></use><use href="#fl" transform="translate(228,92)"></use><path d="M118 104Q150 90 182 104Z"></path></symbol>
+<symbol id="o-arabesk" viewBox="0 0 300 110"><path d="M0 28H300M0 84H300" fill="none" stroke="currentColor" stroke-width="2"></path><use href="#oc" transform="translate(50,56) scale(1.5)"></use><use href="#oc" transform="translate(100,56) scale(1.5)"></use><use href="#oc" transform="translate(150,56) scale(2.1)"></use><use href="#oc" transform="translate(200,56) scale(1.5)"></use><use href="#oc" transform="translate(250,56) scale(1.5)"></use></symbol>
+<symbol id="o-bendera" viewBox="0 0 300 110"><g transform="translate(0,28)"><path d="M0 20Q150 60 300 20" fill="none" stroke="currentColor" stroke-width="2"></path><path d="M18 27L42 27L30 53ZM78 37L102 37L90 63ZM138 40L162 40L150 66ZM198 37L222 37L210 63ZM258 27L282 27L270 53Z"></path><path fill-opacity=".55" d="M48 33L72 33L60 59ZM108 39L132 39L120 65ZM168 39L192 39L180 65ZM228 33L252 33L240 59Z"></path></g><use href="#st" transform="translate(150,16) scale(2)"></use><use href="#st" transform="translate(40,14)"></use><use href="#st" transform="translate(260,14)"></use></symbol>
+<symbol id="o-konfeti" viewBox="0 0 300 110"><circle cx="40" cy="40" r="4"></circle><circle cx="80" cy="76" r="3"></circle><circle cx="125" cy="28" r="4"></circle><circle cx="178" cy="66" r="3.5"></circle><circle cx="232" cy="34" r="4"></circle><circle cx="268" cy="74" r="3"></circle><rect x="60" y="30" width="10" height="4" transform="rotate(30 65 32)"></rect><rect x="104" y="70" width="10" height="4" transform="rotate(-25 109 72)"></rect><rect x="196" y="38" width="10" height="4" transform="rotate(40 201 40)"></rect><rect x="246" y="58" width="10" height="4" transform="rotate(-35 251 60)"></rect><path d="M14 98Q34 68 54 98T94 98M206 98Q226 68 246 98T286 98" fill="none" stroke="currentColor" stroke-width="3"></path><use href="#st" transform="translate(150,52) scale(2.6)"></use><use href="#st" transform="translate(70,56) scale(1.3)"></use><use href="#st" transform="translate(235,74) scale(1.5)"></use></symbol>
+</svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="msq" viewBox="0 0 300 110"><path fill="currentColor" d="M0 100H300V110H0Z M110 100V70Q110 40 150 38Q190 40 190 70V100Z M148 38V28H152V38Z M153 12A6.5 6.5 0 1 0 153 28A5 5 0 1 1 153 12Z M68 100V84Q68 68 88 66Q108 68 108 84V100Z M192 100V84Q192 68 212 66Q232 68 232 84V100Z M32 100V42L38 22L44 42V100Z M29 54H47V58H29Z M256 100V42L262 22L268 42V100Z M253 54H271V58H253Z"></path></symbol>
+<defs>
+<g id="st"><path d="M0-9L2.6-3 9-2.8 4 1.5 5.6 8 0 4.5-5.6 8-4 1.5-9-2.8-2.6-3Z"></path></g>
+<g id="fl"><g fill-opacity=".6"><circle cy="-9" r="8"></circle><circle cx="9" cy="-3" r="8"></circle><circle cx="6" cy="8" r="8"></circle><circle cx="-6" cy="8" r="8"></circle><circle cx="-9" cy="-3" r="8"></circle></g><circle r="4"></circle></g>
+<g id="fp"><ellipse cy="8" rx="9" ry="14"></ellipse><circle cx="-9" cy="-9" r="3.2"></circle><circle cx="-4.5" cy="-13" r="3"></circle><circle cx="1" cy="-14" r="3"></circle><circle cx="6" cy="-12" r="2.8"></circle><circle cx="10" cy="-8" r="2.5"></circle></g>
+<g id="sh"><circle cx="-22" cy="-32" r="14"></circle><circle cx="-6" cy="-40" r="17"></circle><circle cx="12" cy="-36" r="15"></circle><circle cx="28" cy="-30" r="13"></circle><circle cx="-34" cy="-24" r="11"></circle><ellipse cx="46" cy="-28" rx="8" ry="10"></ellipse><ellipse cx="40" cy="-35" rx="3" ry="6"></ellipse><path d="M-26 -22h4V0h-4zM-10 -22h4V0h-4zM10 -22h4V0h-4zM24 -22h4V0h-4z"></path></g>
+<g id="plt"><path d="M0 0V-40" stroke="currentColor" stroke-width="4" fill="none"></path><path d="M0-34Q-20-60-38-50Q-24-28 0-34Z"></path><path d="M0-40Q20-70 40-62Q26-38 0-40Z"></path></g>
+<g id="ln"><path d="M-8 0H8L12 10H-12Z"></path><path d="M-14 12H14Q18 32 14 50H-14Q-18 32-14 12Z"></path><path d="M-12 52H12L8 60H-8Z"></path><circle cy="-5" r="3"></circle></g>
+<g id="bf"><path d="M0 0Q-30-40-48-22Q-52-2 0 0Z"></path><path d="M0 0Q30-40 48-22Q52-2 0 0Z"></path><path d="M0 2Q-28 8-30 28Q-12 34 0 2Z"></path><path d="M0 2Q28 8 30 28Q12 34 0 2Z"></path><rect x="-2" y="-14" width="4" height="34" rx="2"></rect></g>
+</defs>
+<symbol id="o-cincin" viewBox="0 0 300 110"><g fill="none" stroke="currentColor" stroke-width="6"><circle cx="132" cy="64" r="24"></circle><circle cx="168" cy="64" r="24"></circle></g><path d="M126 34l6-9 6 9-6 9z"></path><path d="M20 100Q60 60 105 92Q60 102 20 100Z"></path><path d="M280 100Q240 60 195 92Q240 102 280 100Z"></path><use href="#fl" transform="translate(52,84)"></use><use href="#fl" transform="translate(248,84)"></use></symbol>
+<symbol id="o-merpati" viewBox="0 0 300 110"><defs><g id="dv"><ellipse rx="16" ry="8"></ellipse><circle cx="15" cy="-6" r="6"></circle><path d="M-14-2L-34-12-16 4Z"></path><path d="M-4-4Q-6-28 12-30Q8-10 6-4Z"></path></g></defs><use href="#dv" transform="translate(95,62)"></use><use href="#dv" transform="translate(205,62) scale(-1,1)"></use><path d="M150 74C132 62 134 48 144 48C148 48 150 52 150 52C150 52 152 48 156 48C166 48 168 62 150 74Z"></path><path d="M40 100H260" stroke="currentColor" stroke-width="3"></path><use href="#fl" transform="translate(60,88)"></use><use href="#fl" transform="translate(240,88)"></use></symbol>
+<symbol id="o-janur" viewBox="0 0 300 110"><path d="M24 100Q20 34 104 18Q56 44 50 100Z"></path><path d="M276 100Q280 34 196 18Q244 44 250 100Z"></path><path d="M150 16L162 34 150 52 138 34Z"></path><path d="M150 52V80" stroke="currentColor" stroke-width="3"></path><circle cx="150" cy="86" r="6"></circle><use href="#fl" transform="translate(80,86)"></use><use href="#fl" transform="translate(220,86)"></use></symbol>
+<symbol id="o-bunga" viewBox="0 0 300 110"><path d="M0 92Q75 70 150 92T300 92" fill="none" stroke="currentColor" stroke-width="3"></path><path d="M95 90Q80 70 66 74Q76 90 95 90ZM205 90Q220 70 234 74Q224 90 205 90Z"></path><use href="#fl" transform="translate(50,76) scale(1.2)"></use><use href="#fl" transform="translate(150,70) scale(1.5)"></use><use href="#fl" transform="translate(250,76) scale(1.2)"></use><use href="#fl" transform="translate(100,90) scale(.8)"></use><use href="#fl" transform="translate(200,90) scale(.8)"></use></symbol>
+<symbol id="o-bulan" viewBox="0 0 300 110"><path d="M165 20A36 36 0 1 0 165 96A28 28 0 1 1 165 20Z"></path><use href="#st" transform="translate(205,40) scale(2.2)"></use><use href="#st" transform="translate(245,70) scale(1.6)"></use><use href="#st" transform="translate(60,42) scale(1.8)"></use><use href="#st" transform="translate(95,78) scale(1.3)"></use><use href="#st" transform="translate(272,30) scale(1.2)"></use><use href="#st" transform="translate(28,80)"></use></symbol>
+<symbol id="o-domba" viewBox="0 0 300 110"><use href="#sh" transform="translate(105,100)"></use><use href="#sh" transform="translate(215,100) scale(.6)"></use><rect y="98" width="300" height="3"></rect><use href="#st" transform="translate(40,40) scale(1.5)"></use><use href="#st" transform="translate(262,36) scale(1.3)"></use></symbol>
+<symbol id="o-bayi" viewBox="0 0 300 110"><rect x="88" y="52" width="24" height="46" rx="6"></rect><rect x="92" y="40" width="16" height="12" rx="3"></rect><path d="M96 40Q100 20 104 40Z"></path><circle cx="200" cy="50" r="18"></circle><rect x="197" y="66" width="6" height="32" rx="3"></rect><use href="#st" transform="translate(150,40) scale(2.4)"></use><use href="#st" transform="translate(250,70) scale(1.6)"></use><use href="#st" transform="translate(45,60) scale(1.6)"></use></symbol>
+<symbol id="o-telapak" viewBox="0 0 300 110"><use href="#fp" transform="translate(60,74) rotate(-12) scale(1.3)"></use><use href="#fp" transform="translate(115,44) rotate(-12) scale(1.3)"></use><use href="#fp" transform="translate(185,74) rotate(-12) scale(1.3)"></use><use href="#fp" transform="translate(240,44) rotate(-12) scale(1.3)"></use></symbol>
+<symbol id="o-tangga" viewBox="0 0 300 110"><g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"><path d="M80 100L110 26M150 100L180 26"></path><path d="M84.5 89H154.5M90.5 74H160.5M96.5 59H166.5M102.5 44.5H172.5M108.5 29.7H178.5" stroke-width="4"></path></g><path d="M110 26Q92 8 70 12Q90 26 110 26ZM180 26Q198 8 220 12Q200 26 180 26Z"></path><use href="#fp" transform="translate(236,76) rotate(-10)"></use><use href="#fp" transform="translate(40,76) rotate(-10)"></use><rect y="98" width="300" height="3"></rect></symbol>
+<symbol id="o-tunas" viewBox="0 0 300 110"><path d="M0 100Q150 88 300 100V104H0Z"></path><use href="#plt" transform="translate(90,98) scale(1.3)"></use><use href="#plt" transform="translate(210,98)"></use><use href="#plt" transform="translate(150,96) scale(.8)"></use></symbol>
+<symbol id="o-lentera" viewBox="0 0 300 110"><use href="#ln" transform="translate(70,40)"></use><use href="#ln" transform="translate(150,22) scale(1.25)"></use><use href="#ln" transform="translate(230,40)"></use><rect y="100" width="300" height="3"></rect></symbol>
+<symbol id="o-kendi" viewBox="0 0 300 110"><ellipse cx="150" cy="72" rx="24" ry="26"></ellipse><path d="M142 50H158L156 32H144Z"></path><rect x="140" y="26" width="20" height="5" rx="2"></rect><path d="M172 66Q192 60 198 40Q196 68 176 80Z"></path><rect x="134" y="96" width="32" height="5" rx="2"></rect><use href="#fl" transform="translate(70,80) scale(1.2)"></use><use href="#fl" transform="translate(235,80) scale(1.2)"></use><use href="#fl" transform="translate(102,90) scale(.8)"></use></symbol>
+<symbol id="o-kupu" viewBox="0 0 300 110"><use href="#bf" transform="translate(150,52) scale(1.3)"></use><use href="#bf" transform="translate(68,70) rotate(-15) scale(.7)"></use><use href="#bf" transform="translate(238,40) rotate(12) scale(.8)"></use><use href="#fl" transform="translate(40,92) scale(.8)"></use><use href="#fl" transform="translate(262,94) scale(.8)"></use></symbol>
+<symbol id="o-balon" viewBox="0 0 300 110"><ellipse cx="80" cy="38" rx="16" ry="20"></ellipse><ellipse cx="120" cy="28" rx="16" ry="20"></ellipse><ellipse cx="182" cy="24" rx="16" ry="20"></ellipse><ellipse cx="226" cy="40" rx="16" ry="20"></ellipse><path d="M80 58Q115 85 150 100M120 48Q138 78 150 100M182 44Q168 76 150 100M226 60Q190 86 150 100" fill="none" stroke="currentColor" stroke-width="2"></path><use href="#st" transform="translate(40,80) scale(1.4)"></use><use href="#st" transform="translate(262,82) scale(1.4)"></use></symbol>
+<symbol id="o-kue" viewBox="0 0 300 110"><rect x="100" y="72" width="100" height="26" rx="4"></rect><rect x="115" y="47" width="70" height="22" rx="4"></rect><rect x="130" y="28" width="40" height="16" rx="3"></rect><rect x="143" y="12" width="4" height="14"></rect><rect x="153" y="12" width="4" height="14"></rect><ellipse cx="145" cy="8" rx="2.5" ry="4"></ellipse><ellipse cx="155" cy="8" rx="2.5" ry="4"></ellipse><rect x="80" y="100" width="140" height="4" rx="2"></rect><use href="#st" transform="translate(52,50) scale(1.8)"></use><use href="#st" transform="translate(248,50) scale(1.8)"></use><use href="#st" transform="translate(80,80) scale(1.1)"></use><use href="#st" transform="translate(222,80) scale(1.1)"></use></symbol>
+<symbol id="o-hadiah" viewBox="0 0 300 110"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"><rect x="110" y="60" width="80" height="40"></rect><rect x="104" y="46" width="92" height="14"></rect><path d="M150 46V100M150 46Q130 22 122 34Q120 46 150 46Q180 46 178 34Q170 22 150 46Z"></path></g><use href="#st" transform="translate(60,50) scale(1.8)"></use><use href="#st" transform="translate(240,50) scale(1.8)"></use><use href="#st" transform="translate(75,86) scale(1.1)"></use><use href="#st" transform="translate(225,86) scale(1.1)"></use></symbol>
+<symbol id="o-bintang" viewBox="0 0 300 110"><use href="#st" transform="translate(150,52) scale(4)"></use><use href="#st" transform="translate(80,62) scale(2.2)"></use><use href="#st" transform="translate(220,62) scale(2.2)"></use><use href="#st" transform="translate(40,82) scale(1.4)"></use><use href="#st" transform="translate(260,84) scale(1.4)"></use><use href="#st" transform="translate(110,28) scale(1.2)"></use><use href="#st" transform="translate(190,26) scale(1.2)"></use></symbol>
+<symbol id="crn" viewBox="0 0 60 60"><path d="M4 58V22Q4 4 22 4H58" fill="none" stroke="currentColor" stroke-width="2"></path><path d="M12 58V30Q12 12 30 12H58" fill="none" stroke="currentColor" stroke-width="1" opacity=".6"></path><circle cx="4" cy="4" r="3.5"></circle><path d="M20 20Q34 20 34 34Q20 34 20 20Z"></path><circle cx="46" cy="4" r="1.8"></circle><circle cx="4" cy="46" r="1.8"></circle></symbol>
+<defs>
+<g id="lf"><path d="M0 0Q9-14 0-28Q-9-14 0 0Z"></path></g>
+<g id="rsx"><circle r="11" fill-opacity=".35"></circle><path d="M0-9Q9-9 9 0Q9 9 0 9Q-7 9-7 2Q-7-4 0-4Q4-4 4 0" fill="none" stroke="currentColor" stroke-width="2"></path></g>
+<g id="jm"><g fill-opacity=".75"><ellipse cy="-7" rx="3" ry="7"></ellipse><ellipse cy="-7" rx="3" ry="7" transform="rotate(72)"></ellipse><ellipse cy="-7" rx="3" ry="7" transform="rotate(144)"></ellipse><ellipse cy="-7" rx="3" ry="7" transform="rotate(216)"></ellipse><ellipse cy="-7" rx="3" ry="7" transform="rotate(288)"></ellipse></g><circle r="2.5"></circle></g>
+<g id="bl"><path d="M0-24Q-22-24-24 6L-30 20H30L24 6Q22-24 0-24Z"></path><circle cy="24" r="5"></circle><circle cy="-27" r="3"></circle></g>
+<g id="s8"><rect x="-10" y="-10" width="20" height="20"></rect><rect x="-10" y="-10" width="20" height="20" transform="rotate(45)"></rect></g>
+<g id="cdl"><circle r="14"></circle><circle cx="18" cy="-6" r="18"></circle><circle cx="40" cy="0" r="14"></circle><rect x="-14" y="0" width="68" height="14" rx="7"></rect></g>
+<g id="br"><path d="M30 86Q90 100 142 94" fill="none" stroke="currentColor" stroke-width="2.5"></path><use href="#lf" transform="translate(40,85) rotate(-70)"></use><use href="#lf" transform="translate(62,89) rotate(-55)"></use><use href="#lf" transform="translate(84,92) rotate(-40)"></use><use href="#lf" transform="translate(106,94) rotate(-25)"></use><use href="#lf" transform="translate(128,95) rotate(-10)"></use><use href="#lf" transform="translate(52,88) rotate(-125)"></use><use href="#lf" transform="translate(74,92) rotate(-140)"></use><use href="#lf" transform="translate(96,95) rotate(-155)"></use></g>
+<g id="sc" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M142 70Q120 70 110 56Q100 42 84 46Q68 52 74 66Q80 76 92 70Q98 66 94 60"></path><path d="M110 56Q96 30 70 32Q52 34 46 50"></path><path d="M46 50Q40 62 26 60"></path></g>
+</defs>
+<symbol id="o-daun" viewBox="0 0 300 110"><use href="#br"></use><use href="#br" transform="translate(300,0) scale(-1,1)"></use><path d="M150 60l8 12-8 12-8-12z"></path></symbol>
+<symbol id="o-mawar" viewBox="0 0 300 110"><path d="M0 92Q75 78 150 92T300 92" fill="none" stroke="currentColor" stroke-width="3"></path><use href="#lf" transform="translate(100,88) rotate(-50)"></use><use href="#lf" transform="translate(95,88) rotate(50)"></use><use href="#lf" transform="translate(205,88) rotate(50)"></use><use href="#lf" transform="translate(200,88) rotate(-50)"></use><use href="#rsx" transform="translate(60,70) scale(1.5)"></use><use href="#rsx" transform="translate(150,58) scale(2.2)"></use><use href="#rsx" transform="translate(240,70) scale(1.5)"></use></symbol>
+<symbol id="o-sulur" viewBox="0 0 300 110"><use href="#sc"></use><use href="#sc" transform="translate(300,0) scale(-1,1)"></use><path d="M150 56l9 14-9 14-9-14z"></path><circle cx="150" cy="40" r="3"></circle><circle cx="150" cy="100" r="3"></circle></symbol>
+<symbol id="o-melati" viewBox="0 0 300 110"><path d="M10 40Q150 110 290 40" fill="none" stroke="currentColor" stroke-width="2"></path><use href="#jm" transform="translate(44,55) scale(1.3)"></use><use href="#jm" transform="translate(80,66) scale(1.3)"></use><use href="#jm" transform="translate(116,73) scale(1.3)"></use><use href="#jm" transform="translate(150,75) scale(1.5)"></use><use href="#jm" transform="translate(184,73) scale(1.3)"></use><use href="#jm" transform="translate(220,66) scale(1.3)"></use><use href="#jm" transform="translate(256,55) scale(1.3)"></use><path d="M150 84V90" stroke="currentColor" stroke-width="2"></path><use href="#jm" transform="translate(150,96) scale(.9)"></use></symbol>
+<symbol id="o-mahkota" viewBox="0 0 300 110"><path d="M105 90L112 48L132 70L150 38L168 70L188 48L195 90Z"></path><circle cx="112" cy="43" r="5"></circle><circle cx="150" cy="33" r="5"></circle><circle cx="188" cy="43" r="5"></circle><rect x="104" y="92" width="92" height="8" rx="3"></rect><use href="#st" transform="translate(60,56) scale(1.8)"></use><use href="#st" transform="translate(240,56) scale(1.8)"></use><use href="#st" transform="translate(80,86) scale(1.1)"></use><use href="#st" transform="translate(220,86) scale(1.1)"></use></symbol>
+<symbol id="o-lonceng" viewBox="0 0 300 110"><use href="#bl" transform="translate(118,56) rotate(-12) scale(1.2)"></use><use href="#bl" transform="translate(182,56) rotate(12) scale(1.2)"></use><use href="#fl" transform="translate(50,84) scale(1.2)"></use><use href="#fl" transform="translate(250,84) scale(1.2)"></use><use href="#lf" transform="translate(84,98) rotate(-70)"></use><use href="#lf" transform="translate(216,98) rotate(70)"></use></symbol>
+<symbol id="o-geometri" viewBox="0 0 300 110"><rect y="30" width="300" height="2"></rect><rect y="90" width="300" height="2"></rect><use href="#s8" transform="translate(30,60)"></use><use href="#s8" transform="translate(70,60)"></use><use href="#s8" transform="translate(110,60)"></use><use href="#s8" transform="translate(150,60) scale(1.6)"></use><use href="#s8" transform="translate(190,60)"></use><use href="#s8" transform="translate(230,60)"></use><use href="#s8" transform="translate(270,60)"></use><path transform="translate(50,60)" d="M0-5L5 0 0 5-5 0Z"></path><path transform="translate(90,60)" d="M0-5L5 0 0 5-5 0Z"></path><path transform="translate(130,60)" d="M0-5L5 0 0 5-5 0Z"></path><path transform="translate(170,60)" d="M0-5L5 0 0 5-5 0Z"></path><path transform="translate(210,60)" d="M0-5L5 0 0 5-5 0Z"></path><path transform="translate(250,60)" d="M0-5L5 0 0 5-5 0Z"></path></symbol>
+<symbol id="o-kubah" viewBox="0 0 300 110"><g fill="none" stroke="currentColor"><path d="M95 100V60Q95 22 150 16Q205 22 205 60V100" stroke-width="4"></path><path d="M115 100V64Q115 38 150 32Q185 38 185 64V100" stroke-width="2"></path></g><use href="#st" transform="translate(150,58) scale(2.2)"></use><rect x="82" y="56" width="6" height="44"></rect><rect x="212" y="56" width="6" height="44"></rect><use href="#st" transform="translate(45,60) scale(1.6)"></use><use href="#st" transform="translate(255,60) scale(1.6)"></use><use href="#st" transform="translate(62,90) scale(1.1)"></use><use href="#st" transform="translate(238,90) scale(1.1)"></use></symbol>
+<symbol id="o-awan" viewBox="0 0 300 110"><use href="#cdl" transform="translate(30,66)"></use><use href="#cdl" transform="translate(170,52) scale(1.3)"></use><use href="#cdl" transform="translate(100,90) scale(.7)"></use><path d="M130 14A15 15 0 1 0 130 44A11 11 0 1 1 130 14Z"></path><use href="#st" transform="translate(72,30) scale(1.6)"></use><use href="#st" transform="translate(268,30) scale(1.4)"></use><use href="#st" transform="translate(250,88) scale(1.2)"></use></symbol>
+<symbol id="o-teddy" viewBox="0 0 300 110"><g fill="none" stroke="currentColor" stroke-width="3"><circle cx="150" cy="56" r="22"></circle><circle cx="131" cy="36" r="8"></circle><circle cx="169" cy="36" r="8"></circle><ellipse cx="150" cy="63" rx="9" ry="7"></ellipse><ellipse cx="150" cy="94" rx="20" ry="14"></ellipse><ellipse cx="124" cy="88" rx="6" ry="10" transform="rotate(25 124 88)"></ellipse><ellipse cx="176" cy="88" rx="6" ry="10" transform="rotate(-25 176 88)"></ellipse></g><circle cx="142" cy="52" r="2.6"></circle><circle cx="158" cy="52" r="2.6"></circle><ellipse cx="150" cy="61" rx="3" ry="2"></ellipse><use href="#st" transform="translate(70,50) scale(1.8)"></use><use href="#st" transform="translate(230,50) scale(1.8)"></use><use href="#st" transform="translate(90,86) scale(1.1)"></use><use href="#st" transform="translate(212,86) scale(1.1)"></use></symbol>
+<symbol id="o-pita" viewBox="0 0 300 110"><path d="M150 55Q100 20 82 44Q70 66 150 60Z"></path><path d="M150 55Q200 20 218 44Q230 66 150 60Z"></path><rect x="139" y="48" width="22" height="20" rx="6"></rect><path d="M145 66L118 100L137 94L146 100Z"></path><path d="M155 66L182 100L163 94L154 100Z"></path><use href="#st" transform="translate(50,60) scale(1.6)"></use><use href="#st" transform="translate(250,60) scale(1.6)"></use></symbol>
+<symbol id="o-pohon" viewBox="0 0 300 110"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M150 100V58M150 80Q125 72 112 54M150 80Q175 72 188 54M150 66Q136 54 130 36M150 66Q164 54 170 36"></path></g><use href="#lf" transform="translate(112,54) rotate(-40)"></use><use href="#lf" transform="translate(188,54) rotate(40)"></use><use href="#lf" transform="translate(130,36) rotate(-20)"></use><use href="#lf" transform="translate(170,36) rotate(20)"></use><use href="#lf" transform="translate(150,58) scale(1.2)"></use><rect y="98" width="300" height="3"></rect><use href="#st" transform="translate(60,50) scale(1.6)"></use><use href="#st" transform="translate(240,50) scale(1.6)"></use></symbol>
+<symbol id="o-rumah" viewBox="0 0 300 110"><g fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"><path d="M104 100V62L150 26L196 62V100Z"></path><path d="M134 100V76H166V100"></path></g><circle cx="60" cy="72" r="18"></circle><rect x="58" y="86" width="4" height="14"></rect><circle cx="240" cy="72" r="18"></circle><rect x="238" y="86" width="4" height="14"></rect><rect y="98" width="300" height="3"></rect></symbol>
+</svg>
+<main class="app">
+<section>
+ <h1>Studio Undangan Digital</h1>
+ <p class="sub">Pilih jenis acara, isi data, tambahkan foto dan musik.</p>
+ <div class="tabs"><button id="tEdit" class="on">Isi data</button><button id="tPrev" class="">Pratinjau</button></div>
+ <div class="panel ed" style="margin-top:12px">
+  <label for="ty" style="margin-top:0">Jenis acara</label>
+  <select id="ty"><option value="nikah">💍 Pernikahan</option><option value="aqiqah">🐑 Aqiqah</option><option value="tanah">👣 Turun Tanah</option><option value="khitan">🌟 Khitanan</option><option value="tujuh">🌙 7 Bulanan</option><option value="ultah">🎂 Ulang Tahun</option><option value="lain">🎉 Acara</option></select>
+  <div class="row"><div><label for="n1" id="l1">Nama anak</label><input id="n1"></div><div id="w2" class="hid"><label for="n2" id="l2">Mempelai 2</label><input id="n2"></div></div>
+  <div id="wx" class=""><label for="xx" id="lx">Orang tua</label><input id="xx"></div>
+  <div class="row"><div><label for="dt">Tanggal</label><input id="dt" type="date" value="2027-03-20"></div><div><label for="tm">Jam</label><input id="tm" type="time" value="10:00"></div></div>
+  <label for="pl">Tempat</label><input id="pl" value="Gedung Serbaguna Melati, Bandung">
+  <label for="ms">Kata sambutan</label><textarea id="ms"></textarea>
+  <label for="rl">Agama (salam &amp; kutipan)</label><select id="rl"><option value="islam">Islam</option><option value="kristen">Kristen Protestan</option><option value="katolik">Katolik</option><option value="hindu">Hindu</option><option value="buddha">Buddha</option><option value="konghucu">Konghucu</option><option value="umum">Umum (tanpa kutipan)</option></select>
+  <label for="qt">Hadis / ayat / kutipan (bisa diedit)</label><textarea id="qt" dir="auto" style="min-height:130px"></textarea>
+  <label for="pf">Foto (maks. 6, opsional)</label>
+  <input id="pf" type="file" accept="image/*" multiple=""><div class="ths" id="ths"></div><p class="hint">Ketuk sebuah foto untuk menjadikannya latar bagian waktu &amp; tempat.</p>
+  <button id="pdel" type="button" class="hid" style="margin-top:6px">Hapus semua foto</button>
+  <label>Tema</label>
+  <div class="themes" id="themes"><button data-t="emas" type="button" class=""><i class="sw" style="background: linear-gradient(160deg, rgb(255, 250, 240), rgb(244, 231, 197) 55%, rgb(236, 217, 163)); box-shadow: rgb(176, 138, 53) 0px -7px 0px inset;"></i>Emas</button><button data-t="mawar" type="button"><i class="sw" style="background: linear-gradient(170deg, rgb(255, 247, 248), rgb(251, 217, 224)); box-shadow: rgb(201, 80, 108) 0px -7px 0px inset;"></i>Mawar</button><button data-t="sage" type="button"><i class="sw" style="background: linear-gradient(170deg, rgb(248, 251, 245), rgb(217, 230, 211)); box-shadow: rgb(95, 132, 99) 0px -7px 0px inset;"></i>Sage</button><button data-t="malam" type="button"><i class="sw" style="background: radial-gradient(at 50% 0px, rgb(43, 49, 102), rgb(20, 23, 43) 70%); box-shadow: rgb(227, 194, 122) 0px -7px 0px inset;"></i>Malam</button><button data-t="langit" type="button"><i class="sw" style="background: linear-gradient(rgb(211, 234, 250), rgb(246, 251, 255) 65%); box-shadow: rgb(63, 140, 207) 0px -7px 0px inset;"></i>Langit</button><button data-t="lavender" type="button"><i class="sw" style="background: linear-gradient(165deg, rgb(250, 247, 255), rgb(228, 217, 246)); box-shadow: rgb(138, 100, 200) 0px -7px 0px inset;"></i>Lavender</button><button data-t="ceria" type="button"><i class="sw" style="background: linear-gradient(170deg, rgb(255, 253, 243), rgb(255, 233, 168)); box-shadow: rgb(240, 138, 36) 0px -7px 0px inset;"></i>Ceria</button><button data-t="maroon" type="button"><i class="sw" style="background: linear-gradient(165deg, rgb(255, 250, 246), rgb(234, 213, 198)); box-shadow: rgb(142, 42, 54) 0px -7px 0px inset;"></i>Maroon</button><button type="button" data-t="rosegold"><i class="sw" style="background: linear-gradient(165deg, rgb(255, 248, 245), rgb(244, 217, 210) 60%, rgb(236, 195, 187)); box-shadow: rgb(183, 110, 121) 0px -7px 0px inset;"></i>Rose Gold</button><button type="button" data-t="navy"><i class="sw" style="background: radial-gradient(at 50% 0px, rgb(31, 58, 107), rgb(15, 30, 58) 70%); box-shadow: rgb(212, 175, 55) 0px -7px 0px inset;"></i>Navy Emas</button><button type="button" data-t="emerald"><i class="sw" style="background: linear-gradient(170deg, rgb(244, 251, 248), rgb(207, 233, 223)); box-shadow: rgb(31, 138, 106) 0px -7px 0px inset;"></i>Zamrud</button><button type="button" data-t="dusty"><i class="sw" style="background: linear-gradient(170deg, rgb(248, 250, 252), rgb(215, 226, 238)); box-shadow: rgb(111, 143, 176) 0px -7px 0px inset;"></i>Biru Dusty</button><button type="button" data-t="terakota"><i class="sw" style="background: linear-gradient(165deg, rgb(255, 247, 240), rgb(240, 205, 184)); box-shadow: rgb(192, 98, 58) 0px -7px 0px inset;"></i>Terakota</button><button type="button" data-t="mocha"><i class="sw" style="background: linear-gradient(165deg, rgb(251, 246, 240), rgb(229, 213, 195)); box-shadow: rgb(139, 106, 79) 0px -7px 0px inset;"></i>Mocha</button><button type="button" data-t="peach"><i class="sw" style="background: linear-gradient(170deg, rgb(255, 250, 246), rgb(255, 217, 198)); box-shadow: rgb(238, 138, 106) 0px -7px 0px inset;"></i>Peach</button><button type="button" data-t="tosca"><i class="sw" style="background: linear-gradient(170deg, rgb(246, 252, 252), rgb(200, 236, 234)); box-shadow: rgb(42, 167, 160) 0px -7px 0px inset;"></i>Tosca</button><button type="button" data-t="hitam" class="on"><i class="sw" style="background: linear-gradient(160deg, rgb(28, 28, 28), rgb(11, 11, 11)); box-shadow: rgb(201, 162, 75) 0px -7px 0px inset;"></i>Hitam Emas</button><button type="button" data-t="anggur"><i class="sw" style="background: linear-gradient(165deg, rgb(255, 246, 248), rgb(239, 201, 212)); box-shadow: rgb(156, 47, 82) 0px -7px 0px inset;"></i>Anggur</button></div>
+  <label for="ca">Warna aksen sendiri (opsional)</label><div class="mus"><input id="ca" type="color" value="#b08a35" style="width:64px;padding:2px;height:42px"><button id="car" type="button">Pakai warna tema</button></div>
+  <label>Ornamen</label><div class="orns" id="orns"><button type="button" class=""><svg class="osv" viewBox="0 0 300 110" aria-hidden="true"><use href="#msq"></use></svg>Masjid</button><button type="button" class=""><svg class="osv" viewBox="0 0 300 110" aria-hidden="true"><use href="#o-bulan"></use></svg>Bulan bintang</button><button type="button" class=""><svg class="osv" viewBox="0 0 300 110" aria-hidden="true"><use href="#o-domba"></use></svg>Domba</button><button type="button" class=""><svg class="osv" viewBox="0 0 300 110" aria-hidden="true"><use href="#o-bayi"></use></svg>Perlengkapan bayi</button><button type="button" class="on"><svg class="osv" viewBox="0 0 300 110" aria-hidden="true"><use href="#o-kubah"></use></svg>Lengkung masjid</button><button type="button" class=""><svg class="osv" viewBox="0 0 300 110" aria-hidden="true"><use href="#o-geometri"></use></svg>Bintang geometri</button><button type="button" class=""><svg class="osv" viewBox="0 0 300 110" aria-hidden="true"><use href="#o-awan"></use></svg>Awan &amp; bulan</button><button type="button" class=""><svg class="osv" viewBox="0 0 300 110" aria-hidden="true"><use href="#o-teddy"></use></svg>Boneka beruang</button><button type="button" class=""><svg class="osv" viewBox="0 0 300 110" aria-hidden="true"><use href="#o-pita"></use></svg>Pita</button><button type="button" class=""><svg class="osv" viewBox="0 0 300 110" aria-hidden="true"><use href="#o-arabesk"></use></svg>Arabesk</button><button type="button" class=""><span class="osv" style="padding:14px 0;font-size:18px">—</span>Tanpa ornamen</button></div>
+  <label for="song">Musik latar</label>
+  <div class="mus"><select id="song"><option value="0">Romantis (piano lembut)</option><option value="1">Ceria (gembira)</option><option value="2">Syahdu (tenang)</option><option value="3">Kotak musik (anak)</option><option value="4">Pesta (meriah)</option></select><button id="tryM" type="button">Coba</button></div>
+  <label for="mf">Atau pakai musik sendiri</label>
+  <input id="mf" type="file" accept="audio/*">
+  <p class="hint">MP3, M4A, atau WAV, maksimal 15 MB. Musik diputar berulang.</p>
+  <hr style="border:0;border-top:1px solid var(--line);margin:18px 0 6px">
+  <b>Bagikan undangan</b>
+  <label for="gn">Nama tamu (opsional)</label><input id="gn" placeholder="mis. Budi Santoso">
+  <button id="save" type="button" class="pri" style="width:100%;margin-top:12px">Simpan &amp; buat tautan</button>
+  <label for="wa">Nomor WhatsApp untuk konfirmasi (opsional)</label><input id="wa" inputmode="tel" placeholder="mis. 081234567890">
+  <button id="dl" type="button" style="width:100%;margin-top:8px" disabled="">Menyiapkan…</button>
+  <p class="hint">File mandiri untuk tamu yang diisi di kolom Nama tamu. Bisa dibuka langsung di browser HP Android mana pun tanpa akun, atau diunggah ke hosting gratis. Konfirmasi hadir dikirim lewat WhatsApp.</p>
+  <div id="shr" class="hid">
+   <div class="lk"><input id="lk" readonly=""><button id="cl" type="button">Salin</button></div>
+   <button id="cw" type="button" style="width:100%;margin-top:8px">Salin pesan untuk WhatsApp</button>
+   <p class="hint" id="rsum"></p>
+  </div>
+  <div class="il" id="myl"><p class="hint">Undangan tersimpan:</p><button type="button">🐑 Razqan El Zaydan Ammar · 2026-12-01</button><button type="button">🐑 Razqan El Zaydan Ammar · 2026-12-01</button></div>
+ </div>
+</section>
+<section class="pv">
+ <div class="frame mq" id="frame" style="--t-bg: #121212; --t-ink: #f2e9d0; --t-ac: #c9a24b; --t-card: #1c1c1c; --t-g: linear-gradient(160deg,#1c1c1c,#0b0b0b); --t-pat: repeating-linear-gradient(45deg,rgba(201,162,75,.07) 0 1px,transparent 1px 20px),repeating-linear-gradient(-45deg,rgba(201,162,75,.07) 0 1px,transparent 1px 20px); --t-orn: &quot;◆&quot;; --t-hf: 'Playfair Display',Georgia,serif; --t-sc: 'Pinyon Script',cursive;">
+  <div class="cover" id="cover">
+   <svg class="msq" viewBox="0 0 300 110" aria-hidden="true"><use href="#o-kubah"></use></svg><svg class="crn c1" viewBox="0 0 60 60" aria-hidden="true"><use href="#crn"></use></svg><svg class="crn c2" viewBox="0 0 60 60" aria-hidden="true"><use href="#crn"></use></svg><svg class="crn c3" viewBox="0 0 60 60" aria-hidden="true"><use href="#crn"></use></svg><svg class="crn c4" viewBox="0 0 60 60" aria-hidden="true"><use href="#crn"></use></svg><div class="em" id="cvE">🐑</div>
+   <p id="cvL">Undangan Aqiqah</p>
+   <img class="ph" id="cvP" alt="Foto">
+   <div class="script" id="cvN">Razqan El Zaydan Ammar</div>
+   <p id="cvD">Selasa, 1 Desember 2026</p><p id="cvG" style="margin-top:10px;font-style:italic"></p>
+   <button id="open">Buka undangan</button>
+  </div>
+  <button class="mbtn" id="mbtn" aria-label="Putar atau jeda musik">♪</button>
+  <div class="scroll" id="scr">
+   <div class="sec"><p id="hS" class="sal">Assalamu’alaikum Warahmatullahi Wabarakatuh</p><svg class="msq" viewBox="0 0 300 110" aria-hidden="true"><use href="#o-kubah"></use></svg><p id="hI">Dengan rasa syukur, kami mengundang Anda di acara aqiqah</p><img class="ph" id="hP" alt="Foto"><div class="script" id="hN">Razqan El Zaydan Ammar</div><p id="hX">Putra/putri dari Bpk. Agustiar &amp; Ibu Rani Sagita</p><p id="hM">Atas karunia kelahiran buah hati kami, kami mengundang Anda untuk hadir dan mendoakan agar ia tumbuh menjadi anak yang saleh.</p><p id="hQ" class="qt"><div class="ar" dir="rtl" lang="ar">كُلُّ غُلَامٍ رَهِينَةٌ بِعَقِيقَتِهِ، تُذْبَحُ عَنْهُ يَوْمَ سَابِعِهِ، وَيُحْلَقُ، وَيُسَمَّى</div><div>“Setiap anak tergadai dengan aqiqahnya, disembelih (hewan) pada hari ketujuh kelahirannya, dicukur rambutnya, dan diberi nama.” (HR. Abu Dawud dan Tirmidzi)</div></p></div>
+   <div class="sec hid" id="gal"><h2>Galeri</h2><div class="gal" id="galg" data-k=""></div></div>
+   <div class="sec"><h2>Menuju hari bahagia</h2><div class="cd" id="cd"><div><b>8</b><span>Hari</span></div><div><b>21</b><span>Jam</span></div><div><b>40</b><span>Menit</span></div><div><b>15</b><span>Detik</span></div></div></div>
+   <div class="sec" id="evs"><h2>Waktu &amp; tempat</h2><p id="eD">Selasa, 1 Desember 2026</p><p id="eT">Pukul 11:30 WIB</p><p id="eP">Desa Tampak</p><a id="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Desa%20Tampak"><button class="cbtn" type="button">Buka peta</button></a></div>
+   <div class="sec"><h2>Konfirmasi kehadiran</h2>
+    <input id="rn" placeholder="Nama Anda"><select id="rs"><option>Hadir</option><option>Berhalangan hadir</option></select>
+    <textarea id="rw" placeholder="Ucapan &amp; doa" style="min-height:60px"></textarea>
+    <button class="cbtn" id="rsvp" type="button">Kirim ucapan</button>
+    <div id="wishes"></div>
+   </div>
+   <div class="sec" style="border:0"><svg class="msq" viewBox="0 0 300 110" aria-hidden="true"><use href="#o-kubah"></use></svg><p>Terima kasih atas doa dan kehadiran Anda.</p><p id="fS" class="sal">Wassalamu’alaikum Warahmatullahi Wabarakatuh</p><div class="script" id="fN">Razqan El Zaydan Ammar</div></div>
+  </div>
+ </div>
+ <div class="acts"><button id="rep">Tutup &amp; ulangi</button><button class="pri" id="cp">Salin teks undangan</button></div>
+</section>
+</main>
+<script id="app">
+const $=i=>document.getElementById(i);
+const T={
+ nikah:{l:'Pernikahan',e:'💍',a:'Mempelai 1',av:'Rani',b:'Mempelai 2',bv:'Dimas',i:'Kami yang berbahagia mengundang Anda di pernikahan',m:'Dengan penuh syukur, kami mengundang Anda untuk hadir dan memberi doa restu di hari bahagia kami.'},
+ aqiqah:{l:'Aqiqah',e:'🐑',a:'Nama anak',av:'Muhammad Alif',x:'Orang tua',xp:'Putra/putri dari ',xv:'Bpk. Andi & Ibu Sari',i:'Dengan rasa syukur, kami mengundang Anda di acara aqiqah',m:'Atas karunia kelahiran buah hati kami, kami mengundang Anda untuk hadir dan mendoakan agar ia tumbuh menjadi anak yang saleh.'},
+ tanah:{l:'Turun Tanah',e:'👣',a:'Nama anak',av:'Aisyah Zahra',x:'Orang tua',xp:'Putra/putri dari ',xv:'Bpk. Andi & Ibu Sari',i:'Kami mengundang Anda di acara turun tanah',m:'Sebagai wujud syukur atas langkah pertama si kecil, kami memohon doa agar ia tumbuh sehat, cerdas, dan berbakti.'},
+ khitan:{l:'Khitanan',e:'🌟',a:'Nama anak',av:'Raka Pratama',x:'Orang tua',xp:'Putra dari ',xv:'Bpk. Andi & Ibu Sari',i:'Kami mengundang Anda di acara khitanan',m:'Dengan memohon ridha Allah, kami mengundang Anda untuk hadir dan mendoakan kelancaran serta kesehatan putra kami.'},
+ tujuh:{l:'7 Bulanan',e:'🌙',a:'Nama ibu',av:'Rani',b:'Nama ayah',bv:'Dimas',i:'Kami mengundang Anda di syukuran 7 bulanan',m:'Dalam rangka syukuran kehamilan tujuh bulan, kami memohon doa dan kehadiran Anda agar sang buah hati lahir sehat dan selamat.'},
+ ultah:{l:'Ulang Tahun',e:'🎂',a:'Nama',av:'Nadia',x:'Ulang tahun ke-',xp:'Ulang tahun ke-',xv:'7',i:'Kami mengundang Anda di pesta ulang tahun',m:'Mari berkumpul dan merayakan hari istimewa ini bersama kami dengan kebahagiaan dan doa terbaik.'},
+ lain:{l:'Acara',e:'🎉',a:'Judul acara',av:'Syukuran Rumah Baru',x:'Keterangan singkat',xp:'',xv:'Keluarga Bpk. Hadi',i:'Kami mengundang Anda di acara',m:'Dengan hormat, kami mengundang Anda untuk hadir dan berbagi kebahagiaan bersama kami.'}
+};
+const TH=[['emas','Emas','#fbf5e6','#3b2f1e','#b08a35','#fffaf0'],['mawar','Mawar','#fdeef0','#5a2a36','#c9506c','#fff7f8'],['sage','Sage','#eef3ea','#2f4034','#5f8463','#f8fbf5'],['malam','Malam','#14172b','#f1ecdf','#e3c27a','#1e2240'],['langit','Langit','#e8f3fb','#1f3a52','#3f8ccf','#f6fbff'],['lavender','Lavender','#f1ecf8','#3a2d52','#8a64c8','#faf7ff'],['ceria','Ceria','#fff6d9','#4a2d1a','#f08a24','#fffdf3'],['maroon','Maroon','#f6ebe4','#4b1d22','#8e2a36','#fffaf6']];
+let theme='emas',photo='',type='nikah';
+Object.entries(T).forEach(([k,v])=>$('ty').add(new Option(v.e+' '+v.l,k)));
+TH.forEach(t=>{const b=document.createElement('button');b.dataset.t=t[0];b.type='button';if(t[0]==='emas')b.className='on';
+ b.innerHTML=`<i class="sw" style="background:linear-gradient(135deg,${t[2]} 50%,${t[4]} 50%)"></i>${t[1]}`;$('themes').append(b)});
+function applyType(){
+ const t=T[type];$('l1').textContent=t.a;$('n1').value=t.av;
+ $('w2').classList.toggle('hid',!t.b);if(t.b){$('l2').textContent=t.b;$('n2').value=t.bv}else $('n2').value='';
+ $('wx').classList.toggle('hid',!t.x);if(t.x){$('lx').textContent=t.x;$('xx').value=t.xv}else $('xx').value='';
+ $('ms').value=t.m;render();
+}
+$('ty').onchange=()=>{type=$('ty').value;applyType()};
+const fmt=()=>new Date($('dt').value+'T'+($('tm').value||'00:00'));
+function render(){
+ const t=T[type],a=$('n1').value||'…',b=t.b?$('n2').value||'…':'',d=fmt();
+ const tgl=isNaN(d)?'':d.toLocaleDateString('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+ const nm=b?a+' & '+b:a,xt=t.x&&$('xx').value?t.xp+$('xx').value:'';
+ ['cvN','hN','fN'].forEach(i=>$(i).textContent=nm);
+ $('cvE').textContent=t.e;$('cvL').textContent=type==='lain'?'Undangan':'Undangan '+t.l;
+ $('cvD').textContent=tgl;const gg=gname||$('gn').value.trim();$('cvG').textContent=gg?'Kepada Yth. '+gg:'';updLink();$('hI').textContent=t.i;$('hX').textContent=xt;$('hM').textContent=$('ms').value;
+ $('eD').textContent=tgl;$('eT').textContent='Pukul '+$('tm').value+' WIB';$('eP').textContent=$('pl').value;
+ $('map').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent($('pl').value);
+ const th=TH.find(x=>x[0]===theme),f=$('frame').style;
+ f.setProperty('--t-bg',th[2]);f.setProperty('--t-ink',th[3]);f.setProperty('--t-ac',th[4]);f.setProperty('--t-card',th[5]);
+ ['cvP','hP'].forEach(i=>{$(i).classList.toggle('on',!!photo);if(photo)$(i).src=photo});
+ $('pdel').classList.toggle('hid',!photo);tick();
+}
+function tick(){
+ const diff=fmt()-new Date();let h='';
+ if(isNaN(diff)||diff<=0)h='<p>Hari bahagia telah tiba</p>';
+ else{const s=Math.floor(diff/1000),v=[[Math.floor(s/86400),'Hari'],[Math.floor(s%86400/3600),'Jam'],[Math.floor(s%3600/60),'Menit'],[s%60,'Detik']];
+ h=v.map(x=>`<div><b>${x[0]}</b><span>${x[1]}</span></div>`).join('')}
+ $('cd').innerHTML=h;
+}
+setInterval(tick,1000);
+document.querySelectorAll('.ed input:not([type=file]),.ed textarea').forEach(e=>e.addEventListener('input',render));
+$('themes').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;theme=b.dataset.t;
+ document.querySelectorAll('#themes button').forEach(x=>x.classList.toggle('on',x===b));render()});
+// ---------- Foto ----------
+$('pf').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();
+ r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,640/Math.max(im.width,im.height)),c=document.createElement('canvas');
+  c.width=im.width*k;c.height=im.height*k;c.getContext('2d').drawImage(im,0,0,c.width,c.height);photo=c.toDataURL('image/jpeg',.82);render()};
+  im.onerror=()=>alert('File foto tidak bisa dibaca.');im.src=r.result};r.readAsDataURL(f)};
+$('pdel').onclick=()=>{photo='';$('pf').value='';render()};
+// ---------- Ucapan ----------
+const wishes=[];
+$('rsvp').onclick=()=>{const n=$('rn').value.trim();if(!n){$('rn').focus();return}
+ wishes.unshift({n,s:$('rs').value,w:$('rw').value.trim()});$('rn').value='';$('rw').value='';
+ const box=$('wishes');box.textContent='';
+ wishes.forEach(x=>{const d=document.createElement('div');d.className='wish';const b=document.createElement('b');b.textContent=x.n;
+  const sm=document.createElement('small');sm.textContent=x.s;const p=document.createElement('span');p.textContent=x.w;d.append(b,sm,p);box.append(d)})};
+// ---------- Musik ----------
+const CH={C:[60,64,67],Am:[57,60,64],F:[53,57,60],G:[55,59,62],Dm:[50,53,57],Bb:[58,62,65]};
+const SONGS=[
+ {n:'Romantis (piano lembut)',bpm:190,wave:'sine',rel:1.4,ch:['C','Am','F','G'],pat:[0,1,2,1,2,1,2,1]},
+ {n:'Ceria (gembira)',bpm:300,wave:'triangle',rel:.45,ch:['C','G','Am','F'],pat:[0,2,1,2,0,2,1,2]},
+ {n:'Syahdu (tenang)',bpm:130,wave:'sine',rel:2.4,ch:['Dm','Bb','F','C'],pat:[0,1,2,1]},
+ {n:'Kotak musik (anak)',bpm:150,wave:'triangle',rel:1.1,sh:12,ch:['C','F','G','C'],pat:[0,1,2,1,2,1,2,1]},
+ {n:'Pesta (meriah)',bpm:340,wave:'square',vol:.18,rel:.3,ch:['C','F','G','C'],pat:[0,2,1,2,0,2,1,2]}
+];
+SONGS.forEach((s,i)=>$('song').add(new Option(s.n,i)));
+let ctx,timer=null,stp=0,master,src,customBuf;
+function ensure(){if(!ctx){ctx=new (window.AudioContext||window.webkitAudioContext)();master=ctx.createGain();master.connect(ctx.destination)}ctx.resume()}
+function note(m,s){
+ const t=ctx.currentTime,o=ctx.createOscillator(),g=ctx.createGain();
+ o.type=s.wave;o.frequency.value=440*Math.pow(2,(m+(s.sh||0)-69)/12);
+ g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(s.vol||.5,t+.02);g.gain.exponentialRampToValueAtTime(.001,t+s.rel);
+ o.connect(g);g.connect(master);o.start(t);o.stop(t+s.rel+.1);
+}
+function step(){
+ const s=SONGS[+$('song').value],n=s.pat.length,c=Math.floor(stp/n)%s.ch.length,i=s.pat[stp%n],ch=CH[s.ch[c]];
+ note(ch[i]+(stp%n>=n/2?12:0),s);if(stp%n===0)note(ch[0]-24,s);stp++;
+}
+function startM(){
+ ensure();stopM();
+ if($('song').value==='custom'&&customBuf){master.gain.value=.9;src=ctx.createBufferSource();src.buffer=customBuf;src.loop=true;src.connect(master);src.start()}
+ else{master.gain.value=.3;stp=0;step();timer=setInterval(step,60000/SONGS[+$('song').value].bpm)}
+ $('mbtn').classList.add('play');$('tryM').textContent='Stop';
+}
+function stopM(){clearInterval(timer);timer=null;if(src){try{src.stop()}catch(e){}src=null}$('mbtn').classList.remove('play');$('tryM').textContent='Coba'}
+const playing=()=>!!(timer||src);
+$('mbtn').onclick=()=>playing()?stopM():startM();
+$('song').onchange=()=>{if(playing())startM()};
+$('tryM').onclick=()=>playing()?stopM():startM();
+$('mf').onchange=async e=>{const f=e.target.files[0];if(!f)return;
+ if(f.size>15e6){alert('Ukuran file maksimal 15 MB.');return}
+ try{ensure();customBuf=await ctx.decodeAudioData(await f.arrayBuffer());
+  let o=[...$('song').options].find(x=>x.value==='custom');if(!o){o=new Option('','custom');$('song').add(o)}
+  o.textContent='Musik saya: '+f.name;$('song').value='custom';startM()}
+ catch(err){alert('File audio tidak bisa dibaca. Coba format MP3, M4A, atau WAV.')}};
+$('open').onclick=()=>{$('cover').classList.add('open');$('mbtn').classList.add('show');startM()};
+$('rep').onclick=()=>{stopM();$('cover').classList.remove('open');$('mbtn').classList.remove('show');$('scr').scrollTop=0};
+$('cp').onclick=()=>{
+ const d=fmt(),t=T[type],nm=(t.b?$('n1').value+' & '+$('n2').value:$('n1').value),
+ x=t.x&&$('xx').value?t.xp+$('xx').value+'\n':'',
+ s=`Undangan ${t.l}\n${nm}\n${x}\n${$('ms').value}\n\n${isNaN(d)?'':d.toLocaleDateString('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric'})}, pukul ${$('tm').value} WIB\n${$('pl').value}`;
+ const done=()=>{$('cp').textContent='Tersalin ✓';setTimeout(()=>$('cp').textContent='Salin teks undangan',1800)};
+ try{navigator.clipboard.writeText(s).then(done,()=>prompt('Salin teks ini:',s))}catch(e){prompt('Salin teks ini:',s)}};
+function view(v){document.body.className='v-'+v;$('tEdit').classList.toggle('on',v==='edit');$('tPrev').classList.toggle('on',v==='prev')}
+$('tEdit').onclick=()=>view('edit');$('tPrev').onclick=()=>view('prev');
+const BASE='https://claude.ai/artifact/C1yiEMnEbGuii9thcVUAER';
+let db,usr,assets,curId='',gname='',musicId='',musicName='',unsub;
+const SA=!!window.__INV;if(SA||/^#[a-z0-9]{6}(-|$)/.test(location.hash)){document.body.className='guest';if(!SA)$('frame').style.visibility='hidden'}
+const slug=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const nice=s=>s.split('-').filter(Boolean).map(w=>w[0].toUpperCase()+w.slice(1)).join(' ');
+const link=()=>{const g=slug($('gn').value);return BASE+'#'+curId+(g?'-'+g:'')};
+function updLink(){if(curId)$('lk').value=link()}
+function drawWishes(){const box=$('wishes');box.textContent='';
+ wishes.forEach(x=>{const d=document.createElement('div');d.className='wish';const b=document.createElement('b');b.textContent=x.n;const sm=document.createElement('small');sm.textContent=x.s;const p=document.createElement('span');p.textContent=x.w;d.append(b,sm,p);box.append(d)});
+ const h=wishes.filter(x=>x.s==='Hadir').length;$('rsum').textContent=curId?`Konfirmasi: ${h} hadir, ${wishes.length-h} berhalangan.`:''}
+function watch(){if(unsub){unsub();unsub=null}wishes.length=0;drawWishes();if(!db||!curId)return;
+ unsub=db.collection('wishes').where('inv','==',curId).orderBy('t','desc').limit(200).onSnapshot(s=>{wishes.length=0;s.docs.forEach(d=>wishes.push(d.data()));drawWishes()},()=>{})}
+$('rsvp').onclick=async()=>{const n=$('rn').value.trim();if(!n){$('rn').focus();return}
+ const w={n,s:$('rs').value,w:$('rw').value.trim(),inv:curId,t:Date.now()};
+ if(db&&curId){try{await db.collection('wishes').add(w)}catch(e){alert('Ucapan belum bisa dikirim. Minta pemilik undangan memberi akses Kontributor pada tautan ini.');return}}
+ else{wishes.unshift(w);drawWishes()}
+ $('rn').value='';$('rw').value=''};
+$('pf').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();
+ r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,560/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=im.width*k;c.height=im.height*k;c.getContext('2d').drawImage(im,0,0,c.width,c.height);
+  photo=c.toDataURL('image/jpeg',.75);if(photo.length>2e5)photo=c.toDataURL('image/jpeg',.5);render()};im.onerror=()=>alert('File foto tidak bisa dibaca.');im.src=r.result};r.readAsDataURL(f)};
+startM=async function(){ensure();stopM();
+ if($('song').value==='custom'&&!customBuf&&musicId){try{customBuf=await ctx.decodeAudioData(await(await fetch(window.__INV&&window.__INV.music||'/_blob/'+musicId)).arrayBuffer())}catch(e){}}
+ if($('song').value==='custom'&&customBuf){master.gain.value=.9;src=ctx.createBufferSource();src.buffer=customBuf;src.loop=true;src.connect(master);src.start()}
+ else{if($('song').value==='custom')$('song').value='0';master.gain.value=.3;stp=0;step();timer=setInterval(step,60000/SONGS[+$('song').value].bpm)}
+ $('mbtn').classList.add('play');$('tryM').textContent='Stop'};
+$('mf').onchange=async e=>{const f=e.target.files[0];if(!f)return;
+ if(f.size>15e6){alert('Ukuran file maksimal 15 MB.');return}
+ try{ensure();customBuf=await ctx.decodeAudioData(await f.arrayBuffer())}catch(err){alert('File audio tidak bisa dibaca. Coba MP3, M4A, atau WAV.');return}
+ musicId='';musicName=f.name;
+ if(assets){try{musicId=(await assets.upload(f,{type:'video/mp4'})).id}catch(err){}}
+ let o=[...$('song').options].find(x=>x.value==='custom');if(!o){o=new Option('','custom');$('song').add(o)}
+ o.textContent='Musik saya: '+f.name;$('song').value='custom';startM()};
+function fill(d,id){type=d.type in T?d.type:'nikah';$('ty').value=type;applyType();
+ ['n1','n2','xx','dt','tm','pl','ms'].forEach(k=>{if(d[k]!==undefined)$(k).value=d[k]});
+ theme=d.theme||'emas';photo=d.photo||'';musicId=d.musicId||'';musicName=d.musicName||'';customBuf=null;
+ let o=[...$('song').options].find(x=>x.value==='custom');
+ if(d.song==='custom'&&musicId){if(!o){o=new Option('','custom');$('song').add(o)}o.textContent='Musik saya: '+musicName;$('song').value='custom'}else $('song').value=d.song||'0';
+ document.querySelectorAll('#themes button').forEach(x=>x.classList.toggle('on',x.dataset.t===theme));
+ curId=id;$('shr').classList.remove('hid');$('save').textContent='Simpan perubahan';render();watch()}
+$('save').onclick=async()=>{
+ if(!db){alert('Penyimpanan belum aktif. Buka halaman ini lewat tautan artifact dan masuk ke akun Anda.');return}
+ const id=curId||(Math.random().toString(36)+'000000').slice(2,8);let sg=$('song').value,nt='';
+ if(sg==='custom'&&!musicId){sg='0';nt='Musik sendiri belum bisa disimpan untuk dibagikan, jadi undangan memakai musik bawaan.'}
+ const d={type,n1:$('n1').value,n2:$('n2').value,xx:$('xx').value,dt:$('dt').value,tm:$('tm').value,pl:$('pl').value,ms:$('ms').value,theme,photo,song:sg,musicId,musicName,t:Date.now()};
+ try{await db.doc('invites/'+id).set(d)}catch(e){alert('Gagal menyimpan: '+(e.message||e.code));return}
+ curId=id;$('shr').classList.remove('hid');updLink();watch();list();$('save').textContent='Simpan perubahan';if(nt)alert(nt)};
+async function list(){if(!db)return;try{const s=await db.collection('invites').orderBy('t','desc').limit(20).get(),box=$('myl');box.textContent='';
+ if(s.empty)return;const h=document.createElement('p');h.className='hint';h.textContent='Undangan tersimpan:';box.append(h);
+ s.docs.forEach(x=>{const d=x.data(),b=document.createElement('button');b.type='button';b.textContent=(T[d.type]?T[d.type].e:'')+' '+(d.n1||'')+(d.n2?' & '+d.n2:'')+' · '+d.dt;b.onclick=()=>{fill(d,x.id);view('edit')};box.append(b)})}catch(e){}}
+const cp2=(s,b)=>{const o=b.textContent,ok=()=>{b.textContent='Tersalin ✓';setTimeout(()=>b.textContent=o,1600)};try{navigator.clipboard.writeText(s).then(ok,()=>prompt('Salin:',s))}catch(e){prompt('Salin:',s)}};
+$('cl').onclick=()=>cp2(link(),$('cl'));
+$('cw').onclick=()=>{const t=T[type],g=$('gn').value.trim(),d=fmt(),nm=t.b?$('n1').value+' & '+$('n2').value:$('n1').value;
+ cp2(`${R[rel].o}\n\nKepada Yth. ${g||'Bapak/Ibu/Saudara/i'},\n\nDengan hormat, kami mengundang Anda ke acara ${type==='lain'?'':t.l.toLowerCase()+' '}${nm}${isNaN(d)?'':' pada '+d.toLocaleDateString('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric'})}.\n\nBuka undangan digital kami di sini:\n${link()}\n\nTerima kasih atas doa dan kehadirannya.`,$('cw'))};
+function err(t){const c=$('cover');c.className='cover';c.textContent=t}
+async function route(){
+ const m=location.hash.match(/^#([a-z0-9]{6})(?:-([a-z0-9-]+))?$/);
+ if(!m){if(db)list();try{if(usr&&!(await usr.canEdit()))$('save').classList.add('hid')}catch(e){}return}
+ document.body.className='guest';gname=m[2]?nice(m[2]):'';
+ try{if(!db)err('Undangan belum bisa dimuat. Masuk ke akun Claude Anda, lalu buka ulang tautan ini.');
+ else{const s=await db.doc('invites/'+m[1]).get();if(!s.exists)err('Undangan tidak ditemukan. Periksa kembali tautannya.');else fill(s.data(),m[1])}}
+ catch(e){err('Undangan belum bisa dimuat. Coba lagi nanti.')}
+ $('frame').style.visibility=''}
+addEventListener('hashchange',route);
+(async()=>{try{db=await claude.use('db');usr=await claude.use('user');assets=await claude.use('assets');dls=await claude.use('downloads')}catch(e){}route()})();
+const SER="'Cormorant Garamond',Georgia,serif",PF="'Playfair Display',Georgia,serif",SC="'Pinyon Script',cursive",FR="'Fredoka',system-ui,sans-serif";
+const X={
+ emas:{g:'linear-gradient(160deg,#fffaf0,#f4e7c5 55%,#ecd9a3)',p:'radial-gradient(circle at 100% 0,rgba(176,138,53,.2) 0 90px,transparent 91px),radial-gradient(circle at 0 100%,rgba(176,138,53,.2) 0 90px,transparent 91px)',o:'❖',h:SER,s:SC},
+ mawar:{g:'linear-gradient(170deg,#fff7f8,#fbd9e0)',p:'radial-gradient(circle at 92% 6%,rgba(201,80,108,.18) 0 70px,transparent 71px),radial-gradient(circle at 6% 94%,rgba(201,80,108,.14) 0 100px,transparent 101px)',o:'❀',h:PF,s:SC},
+ sage:{g:'linear-gradient(170deg,#f8fbf5,#d9e6d3)',p:'repeating-linear-gradient(45deg,rgba(95,132,99,.08) 0 2px,transparent 2px 18px)',o:'❧',h:SER,s:SC},
+ malam:{g:'radial-gradient(ellipse at 50% 0,#2b3166,#14172b 70%)',p:'radial-gradient(1.5px 1.5px at 20% 30%,#e3c27a,transparent),radial-gradient(1px 1px at 70% 20%,#fff,transparent),radial-gradient(1.5px 1.5px at 40% 70%,#fff,transparent),radial-gradient(1px 1px at 85% 60%,#e3c27a,transparent),radial-gradient(1px 1px at 10% 85%,#fff,transparent)',ps:'220px 260px',o:'✦',h:SER,s:SC},
+ langit:{g:'linear-gradient(180deg,#d3eafa,#f6fbff 65%)',p:'radial-gradient(circle at 20% 12%,#fff 0 26px,transparent 27px),radial-gradient(circle at 27% 11%,#fff 0 20px,transparent 21px),radial-gradient(circle at 78% 30%,rgba(255,255,255,.85) 0 24px,transparent 25px),radial-gradient(circle at 85% 29%,rgba(255,255,255,.85) 0 18px,transparent 19px)',o:'✧',h:FR,s:FR,b:FR,fs:'36px',cfs:'42px',fw:'600'},
+ lavender:{g:'linear-gradient(165deg,#faf7ff,#e4d9f6)',p:'radial-gradient(circle at 10% 8%,rgba(138,100,200,.15) 0 60px,transparent 61px),radial-gradient(circle at 94% 90%,rgba(138,100,200,.15) 0 80px,transparent 81px)',o:'✿',h:PF,s:SC},
+ ceria:{g:'linear-gradient(170deg,#fffdf3,#ffe9a8)',p:'radial-gradient(5px 5px at 15% 20%,#f08a24 98%,transparent),radial-gradient(4px 4px at 60% 12%,#e8467c 98%,transparent),radial-gradient(5px 5px at 82% 40%,#2fa8d8 98%,transparent),radial-gradient(4px 4px at 30% 65%,#6cc04a 98%,transparent),radial-gradient(5px 5px at 70% 82%,#f08a24 98%,transparent),radial-gradient(4px 4px at 10% 90%,#e8467c 98%,transparent)',ps:'180px 200px',o:'★',h:FR,s:FR,b:FR,fs:'36px',cfs:'44px',fw:'600'},
+ maroon:{g:'linear-gradient(165deg,#fffaf6,#ead5c6)',p:'repeating-linear-gradient(45deg,rgba(142,42,54,.08) 0 1px,transparent 1px 22px),repeating-linear-gradient(-45deg,rgba(142,42,54,.08) 0 1px,transparent 1px 22px)',o:'◆',h:PF,s:SC}
+};
+function applyX(){const x=X[theme],f=$('frame').style,set=(k,v)=>v?f.setProperty(k,v):f.removeProperty(k);
+ set('--t-g',x.g);set('--t-pat',x.p);set('--t-ps',x.ps);set('--t-orn','"'+x.o+'"');set('--t-hf',x.h);set('--t-sc',x.s);set('--t-bf',x.b);set('--t-fs',x.fs);set('--t-cfs',x.cfs);set('--t-fw',x.fw)}
+const _r=render;render=function(){_r();applyX()};
+document.querySelectorAll('#themes button').forEach(b=>{const s=b.querySelector('.sw'),th=TH.find(t=>t[0]===b.dataset.t);s.style.background=X[b.dataset.t].g;s.style.boxShadow='inset 0 -7px 0 '+th[4]});
+let photos=[],bg=0;
+function applyP(){
+ const ev=$('evs'),b=photos[bg];
+ ev.style.backgroundImage=b?`linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.62)),url("${b.src}")`:'';ev.classList.toggle('pb',!!b);
+ $('frame').classList.toggle('mq',orn!=='none');document.querySelectorAll('#frame .msq use').forEach(u=>u.setAttribute('href','#'+(orn==='masjid'?'msq':'o-'+orn)));
+ const k=photos.map(p=>p.id||p.src.length).join(),g=$('galg');
+ if(g.dataset.k!==k){g.dataset.k=k;g.textContent='';photos.forEach((p,i)=>{const im=document.createElement('img');im.src=p.src;im.alt='Foto '+(i+1);g.append(im)})}
+ $('gal').classList.toggle('hid',photos.length<2)}
+const _r2=render;render=function(){_r2();applyP()};
+function draw(){photo=photos[0]?photos[0].src:'';if(bg>=photos.length)bg=photos.length-1;if(bg<0)bg=0;
+ const box=$('ths');box.textContent='';
+ photos.forEach((p,i)=>{const w=document.createElement('div');w.className='th'+(i===bg?' on':'');const im=document.createElement('img');im.src=p.src;im.alt='Foto '+(i+1);im.onclick=()=>{bg=i;draw()};
+  const x=document.createElement('button');x.type='button';x.textContent='✕';x.setAttribute('aria-label','Hapus foto');x.onclick=()=>{photos.splice(i,1);draw()};w.append(im,x);box.append(w)});
+ render()}
+const prep=f=>new Promise((ok,no)=>{const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,900/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=im.width*k;c.height=im.height*k;c.getContext('2d').drawImage(im,0,0,c.width,c.height);
+ const src=c.toDataURL('image/jpeg',.82);
+ c.toBlob(async b=>{let id='';if(assets){try{id=(await assets.upload(b,{type:'image/jpeg'})).id}catch(e){}}ok({src,id})},'image/jpeg',.82)};im.onerror=no;im.src=r.result};r.onerror=no;r.readAsDataURL(f)});
+$('pf').onchange=async e=>{const fs=[...e.target.files].slice(0,6-photos.length);e.target.value='';
+ for(const f of fs){try{photos.push(await prep(f))}catch(err){alert('File foto tidak bisa dibaca.')}}
+ if(fs.length&&!assets)alert('Foto hanya tampil di pratinjau ini. Agar ikut dibagikan, buka halaman sebagai pemilik atau editor artifact.');
+ draw()};
+$('pdel').onclick=()=>{photos=[];draw()};
+let orn='none';
+const O={nikah:[['cincin','Cincin'],['merpati','Merpati'],['janur','Janur'],['bunga','Bunga']],aqiqah:[['masjid','Masjid'],['bulan','Bulan bintang'],['domba','Domba'],['bayi','Perlengkapan bayi']],tanah:[['telapak','Telapak kaki'],['tangga','Tangga tebu'],['tunas','Tunas']],khitan:[['masjid','Masjid'],['bulan','Bulan bintang'],['lentera','Lentera']],tujuh:[['kendi','Kendi'],['bunga','Bunga'],['kupu','Kupu-kupu']],ultah:[['balon','Balon'],['kue','Kue'],['hadiah','Hadiah'],['bintang','Bintang']],lain:[['bunga','Bunga'],['bintang','Bintang'],['rumah','Rumah']]};
+function drawOrn(){const box=$('orns');box.textContent='';
+ [...O[type],['none','Tanpa ornamen']].forEach(([id,nm])=>{const b=document.createElement('button');b.type='button';b.className=id===orn?'on':'';
+  b.innerHTML=id==='none'?'<span class="osv" style="padding:14px 0;font-size:18px">—</span>':`<svg class="osv" viewBox="0 0 300 110" aria-hidden="true"><use href="#${id==='masjid'?'msq':'o-'+id}"/></svg>`;
+  b.append(nm);b.onclick=()=>{orn=id;drawOrn();render()};box.append(b)})}
+const _a=applyType;applyType=function(){_a();orn=O[type][0][0];drawOrn();setQ();render()};
+const _f=fill;fill=function(d,id){_f(d,id);
+ photos=(d.photos||[]).map(i=>({id:i,src:'/_blob/'+i}));if(!photos.length&&d.photo)photos=[{id:'',src:d.photo}];if(d.phd)photos=d.phd.map(s=>({id:'',src:s}));
+ bg=d.bg>=0?d.bg:0;orn=d.orn||(d.mosque?'masjid':'none');cac=d.ca||'';if(cac)$('ca').value=cac;rel=d.rel||'umum';$('rl').value=rel;$('qt').value=d.qt!==undefined?d.qt:'';$('wa').value=d.wa||'';drawOrn();draw()};
+$('save').onclick=async()=>{
+ if(!db){alert('Penyimpanan belum aktif. Buka halaman ini lewat tautan artifact dan masuk ke akun Anda.');return}
+ const id=curId||(Math.random().toString(36)+'000000').slice(2,8);let sg=$('song').value,nt='';
+ if(sg==='custom'&&!musicId){sg='0';nt='Musik sendiri belum bisa dibagikan, jadi undangan memakai musik bawaan. '}
+ const ph=photos.filter(p=>p.id),bi=photos[bg]&&photos[bg].id?ph.findIndex(p=>p.id===photos[bg].id):-1;
+ if(ph.length<photos.length)nt+='Sebagian foto belum terunggah sehingga tidak ikut dibagikan.';
+ const d={type,n1:$('n1').value,n2:$('n2').value,xx:$('xx').value,dt:$('dt').value,tm:$('tm').value,pl:$('pl').value,ms:$('ms').value,theme,photo:'',photos:ph.map(p=>p.id),bg:bi,orn,rel,qt:$('qt').value,ca:cac,wa:$('wa').value,song:sg,musicId,musicName,t:Date.now()};
+ try{await db.doc('invites/'+id).set(d)}catch(e){alert('Gagal menyimpan: '+(e.message||e.code));return}
+ curId=id;$('shr').classList.remove('hid');updLink();watch();list();$('save').textContent='Simpan perubahan';if(nt)alert(nt.trim())};
+let dls;
+const rd=b=>new Promise(ok=>{const f=new FileReader();f.onload=()=>ok(f.result);f.readAsDataURL(b)});
+const _rt=route;route=function(){if(window.__INV){const v=window.__INV;gname=v.guest||'';document.title='Undangan '+(v.n1||'');fill(v,'sa');$('frame').style.visibility='';return}return _rt()};
+const _rs=$('rsvp').onclick;
+$('rsvp').onclick=()=>{const v=window.__INV;if(!(v&&v.wa))return _rs();
+ const n=$('rn').value.trim();if(!n){$('rn').focus();return}
+ let w=v.wa.replace(/\D/g,'');if(w[0]==='0')w='62'+w.slice(1);else if(w[0]==='8')w='62'+w;
+ const u=$('rw').value.trim(),tx=`Halo, saya ${n}. Saya ${$('rs').value==='Hadir'?'akan hadir':'berhalangan hadir'} di acara ${T[type].l.toLowerCase()} ${$('n1').value}${T[type].b?' & '+$('n2').value:''}.${u?'\n\nUcapan: '+u:''}`;
+ window.open('https://wa.me/'+w+'?text='+encodeURIComponent(tx),'_blank')};
+$('dl').onclick=async()=>{
+ if(!dls){alert('Unduhan belum tersedia di sini. Buka halaman lewat tautan artifact.');return}
+ const b=$('dl'),o=b.textContent;b.textContent='Menyiapkan…';b.disabled=true;
+ try{
+  const phd=[];for(const p of photos)phd.push(p.src.startsWith('data:')?p.src:await rd(await(await fetch(p.src)).blob()));
+  let music='';
+  if($('song').value==='custom'&&musicId){try{const bl=await(await fetch('/_blob/'+musicId)).blob();if(bl.size<4e6)music=await rd(bl)}catch(e){}}
+  const cu=$('song').value==='custom';
+  const inv={type,n1:$('n1').value,n2:$('n2').value,xx:$('xx').value,dt:$('dt').value,tm:$('tm').value,pl:$('pl').value,ms:$('ms').value,theme,phd,bg,orn,rel,qt:$('qt').value,ca:cac,wa:$('wa').value,guest:$('gn').value.trim(),song:cu?(music?'custom':'0'):$('song').value,musicId:music?'emb':'',musicName,music,t:Date.now()};
+  const root=document.documentElement.cloneNode(true);
+  root.querySelectorAll('script:not(#app),base,meta[http-equiv]').forEach(e=>e.remove());
+  root.querySelector('title').textContent='Undangan '+inv.n1;
+  root.querySelector('#cover').classList.remove('open');root.querySelector('#mbtn').classList.remove('show','play');
+  root.querySelector('head').insertAdjacentHTML('beforeend','<script>window.__INV='+JSON.stringify(inv).replace(/</g,'\\u003c')+'<\/script>');
+  const nm=slug($('n1').value+(T[type].b?'-'+$('n2').value:''))||'undangan';
+  await dls.save({filename:'undangan-'+nm+'.html',data:'<!DOCTYPE html>\n'+root.outerHTML});
+ }catch(e){if(!e||e.code!=='declined')alert('Gagal menyiapkan file: '+((e&&e.message)||e))}
+ b.textContent=o;b.disabled=false};
+const R={
+ islam:{n:'Islam',o:'Assalamu’alaikum Warahmatullahi Wabarakatuh',c:'Wassalamu’alaikum Warahmatullahi Wabarakatuh',q:{
+  nikah:'“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.” (QS. Ar-Rum: 21)\n\n“Semoga Allah memberkahimu, memberkahi atasmu, dan mengumpulkan kalian berdua dalam kebaikan.” (HR. Abu Dawud dan Tirmidzi)',
+  aqiqah:'“Setiap anak tergadai dengan aqiqahnya, disembelih (hewan) pada hari ketujuh kelahirannya, dicukur rambutnya, dan diberi nama.” (HR. Abu Dawud dan Tirmidzi)',
+  tanah:'“Apabila manusia meninggal dunia, terputuslah amalnya kecuali tiga perkara: sedekah jariyah, ilmu yang bermanfaat, atau anak saleh yang mendoakannya.” (HR. Muslim)',
+  khitan:'“Fitrah itu ada lima: khitan, mencukur bulu kemaluan, mencabut bulu ketiak, memotong kuku, dan memotong kumis.” (HR. Bukhari dan Muslim)',
+  tujuh:'“Sungguh, jika Engkau memberi kami anak yang saleh, tentulah kami akan selalu bersyukur.” (QS. Al-A’raf: 189)',
+  ultah:'“Sebaik-baik manusia adalah yang panjang umurnya dan baik amalnya.” (HR. Tirmidzi)',
+  lain:'“Barang siapa tidak berterima kasih kepada manusia, maka ia belum bersyukur kepada Allah.” (HR. Abu Dawud dan Tirmidzi)'}},
+ kristen:{n:'Kristen Protestan',o:'Salam sejahtera dalam kasih Tuhan Yesus Kristus',c:'Tuhan Yesus memberkati.',q:{
+  nikah:'“Kasih itu sabar; kasih itu murah hati; ia tidak cemburu. Ia tidak memegahkan diri dan tidak sombong.” (1 Korintus 13:4)',
+  anak:'“Sesungguhnya anak-anak adalah milik pusaka dari pada TUHAN, dan buah kandungan adalah suatu upah.” (Mazmur 127:3)',
+  ultah:'“Inilah hari yang dijadikan TUHAN, marilah kita bersorak-sorak dan bersukacita karenanya!” (Mazmur 118:24)'}},
+ katolik:{n:'Katolik',o:'Salam sejahtera dalam kasih Kristus',c:'Tuhan memberkati kita semua.',q:{
+  nikah:'“Karena itu, apa yang telah dipersatukan Allah, janganlah diceraikan manusia.” (Markus 10:9)',
+  anak:'“Biarkanlah anak-anak itu datang kepada-Ku, jangan menghalang-halangi mereka, sebab orang-orang yang seperti itulah yang empunya Kerajaan Allah.” (Markus 10:14)',
+  ultah:'“Inilah hari yang dijadikan TUHAN, marilah kita bersorak-sorak dan bersukacita karenanya!” (Mazmur 118:24)'}},
+ hindu:{n:'Hindu',o:'Om Swastyastu',c:'Om Shanti, Shanti, Shanti, Om',q:{
+  nikah:'“Berjalanlah bersama, berbicaralah bersama, dan biarlah pikiran kalian selaras.” (Rgveda X.191.2)',
+  anak:'“Sarve bhavantu sukhinah, sarve santu niramayah.” Semoga semua makhluk berbahagia, semoga semua sehat dan bebas dari penderitaan. (Doa Shanti)',
+  ultah:'“Sarve bhavantu sukhinah, sarve santu niramayah.” Semoga semua makhluk berbahagia, semoga semua sehat dan bebas dari penderitaan. (Doa Shanti)'}},
+ buddha:{n:'Buddha',o:'Namo Buddhaya',c:'Semoga semua makhluk berbahagia. Sadhu, sadhu, sadhu.',q:{
+  nikah:'“Menunjang ayah dan ibu, membantu istri dan anak, serta bekerja dengan tenteram, itulah berkah utama.” (Mangala Sutta)',
+  anak:'“Sabbe sattā bhavantu sukhitattā.” Semoga semua makhluk hidup berbahagia. (Karaniya Metta Sutta)',
+  ultah:'“Bagi orang yang selalu menghormati para sesepuh, empat hal akan bertambah: umur panjang, keindahan, kebahagiaan, dan kekuatan.” (Dhammapada 109)'}},
+ konghucu:{n:'Konghucu',o:'Salam Kebajikan',c:'Wei De Dong Tian — hanya kebajikan yang menggerakkan Tian.',q:{
+  nikah:'“Jalan seorang junzi (insan berbudi) bermula dari hubungan suami istri.” (Zhongyong 12)',
+  anak:'“Bukankah menyenangkan belajar dan mengulangnya pada waktunya?” (Lunyu 1:1)',
+  ultah:'“Pada usia lima belas tahun aku bertekad untuk belajar, pada usia tiga puluh aku berdiri teguh, pada usia empat puluh aku tidak lagi bimbang.” (Lunyu 2:4)'}},
+ umum:{n:'Umum (tanpa kutipan)',o:'Salam sejahtera',c:'',q:{}}
+};
+let rel='islam';
+const MP={aqiqah:'anak',tanah:'anak',khitan:'anak',tujuh:'anak',lain:'ultah'};
+const AR={
+ nikah:['وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً','بَارَكَ اللَّهُ لَكَ، وَبَارَكَ عَلَيْكَ، وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ'],
+ aqiqah:['كُلُّ غُلَامٍ رَهِينَةٌ بِعَقِيقَتِهِ، تُذْبَحُ عَنْهُ يَوْمَ سَابِعِهِ، وَيُحْلَقُ، وَيُسَمَّى'],
+ tanah:['إِذَا مَاتَ الْإِنْسَانُ انْقَطَعَ عَنْهُ عَمَلُهُ إِلَّا مِنْ ثَلَاثَةٍ: إِلَّا مِنْ صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ'],
+ khitan:['الْفِطْرَةُ خَمْسٌ: الْخِتَانُ، وَالِاسْتِحْدَادُ، وَنَتْفُ الْإِبِطِ، وَتَقْلِيمُ الْأَظْفَارِ، وَقَصُّ الشَّارِبِ'],
+ tujuh:['لَئِنْ آتَيْتَنَا صَالِحًا لَنَكُونَنَّ مِنَ الشَّاكِرِينَ'],
+ ultah:['خَيْرُ النَّاسِ مَنْ طَالَ عُمُرُهُ وَحَسُنَ عَمَلُهُ'],
+ lain:['مَنْ لَا يَشْكُرُ النَّاسَ لَا يَشْكُرُ اللَّهَ']
+};
+function setQ(){const q=R[rel].q;let t=q[type]||q[MP[type]]||'';
+ if(rel==='islam'&&AR[type])t=t.split('\n\n').map((b,i)=>(AR[type][i]?AR[type][i]+'\n':'')+b).join('\n\n');
+ $('qt').value=t}
+Object.entries(R).forEach(([k,v])=>$('rl').add(new Option(v.n,k)));
+$('rl').onchange=()=>{rel=$('rl').value;setQ();render()};
+$('qt').oninput=()=>render();
+function applyR(){$('hS').textContent=R[rel].o;$('fS').textContent=R[rel].c;
+ const q=$('hQ');q.textContent='';
+ $('qt').value.split('\n').forEach(l=>{l=l.trim();if(!l)return;const d=document.createElement('div');
+  if(/[\u0600-\u06FF]/.test(l)){d.className='ar';d.dir='rtl';d.lang='ar'}d.textContent=l;q.append(d)})}
+const _r3=render;render=function(){_r3();applyR()};
+const NT=[
+ ['rosegold','Rose Gold','#fbefe9','#4a2e2a','#b76e79','#fff8f5',{g:'linear-gradient(165deg,#fff8f5,#f4d9d2 60%,#ecc3bb)',p:'radial-gradient(circle at 90% 6%,rgba(183,110,121,.2) 0 80px,transparent 81px),radial-gradient(circle at 5% 95%,rgba(183,110,121,.16) 0 110px,transparent 111px)',o:'❁',h:PF,s:SC}],
+ ['navy','Navy Emas','#0f1e3a','#f3ead3','#d4af37','#172a4d',{g:'radial-gradient(ellipse at 50% 0,#1f3a6b,#0f1e3a 70%)',p:'radial-gradient(1.5px 1.5px at 20% 30%,#d4af37,transparent),radial-gradient(1px 1px at 70% 20%,#f3ead3,transparent),radial-gradient(1.5px 1.5px at 45% 75%,#f3ead3,transparent),radial-gradient(1px 1px at 88% 62%,#d4af37,transparent)',ps:'240px 280px',o:'✦',h:SER,s:SC}],
+ ['emerald','Zamrud','#e7f3ee','#12372b','#1f8a6a','#f4fbf8',{g:'linear-gradient(170deg,#f4fbf8,#cfe9df)',p:'repeating-linear-gradient(135deg,rgba(31,138,106,.07) 0 2px,transparent 2px 16px)',o:'❦',h:SER,s:SC}],
+ ['dusty','Biru Dusty','#edf1f6','#2c3a4d','#6f8fb0','#f8fafc',{g:'linear-gradient(170deg,#f8fafc,#d7e2ee)',p:'radial-gradient(circle at 92% 8%,rgba(111,143,176,.2) 0 70px,transparent 71px),radial-gradient(circle at 6% 92%,rgba(111,143,176,.16) 0 100px,transparent 101px)',o:'❋',h:PF,s:SC}],
+ ['terakota','Terakota','#f8ece3','#50281c','#c0623a','#fff7f0',{g:'linear-gradient(165deg,#fff7f0,#f0cdb8)',p:'repeating-linear-gradient(45deg,rgba(192,98,58,.08) 0 1px,transparent 1px 24px),repeating-linear-gradient(-45deg,rgba(192,98,58,.08) 0 1px,transparent 1px 24px)',o:'✶',h:PF,s:SC}],
+ ['mocha','Mocha','#f3ebe2','#3d2b1f','#8b6a4f','#fbf6f0',{g:'linear-gradient(165deg,#fbf6f0,#e5d5c3)',p:'radial-gradient(circle at 8% 10%,rgba(139,106,79,.16) 0 70px,transparent 71px),radial-gradient(circle at 94% 92%,rgba(139,106,79,.16) 0 90px,transparent 91px)',o:'❧',h:SER,s:SC}],
+ ['peach','Peach','#fff1e8','#5a3326','#ee8a6a','#fffaf6',{g:'linear-gradient(170deg,#fffaf6,#ffd9c6)',p:'radial-gradient(circle at 90% 8%,rgba(238,138,106,.2) 0 70px,transparent 71px),radial-gradient(circle at 8% 92%,rgba(238,138,106,.16) 0 100px,transparent 101px)',o:'❀',h:PF,s:SC}],
+ ['tosca','Tosca','#e6f6f5','#12413f','#2aa7a0','#f6fcfc',{g:'linear-gradient(170deg,#f6fcfc,#c8ecea)',p:'repeating-linear-gradient(45deg,rgba(42,167,160,.08) 0 2px,transparent 2px 18px)',o:'✧',h:SER,s:SC}],
+ ['hitam','Hitam Emas','#121212','#f2e9d0','#c9a24b','#1c1c1c',{g:'linear-gradient(160deg,#1c1c1c,#0b0b0b)',p:'repeating-linear-gradient(45deg,rgba(201,162,75,.07) 0 1px,transparent 1px 20px),repeating-linear-gradient(-45deg,rgba(201,162,75,.07) 0 1px,transparent 1px 20px)',o:'◆',h:PF,s:SC}],
+ ['anggur','Anggur','#f6e8ec','#4a1426','#9c2f52','#fff6f8',{g:'linear-gradient(165deg,#fff6f8,#efc9d4)',p:'radial-gradient(circle at 92% 6%,rgba(156,47,82,.16) 0 70px,transparent 71px),radial-gradient(circle at 6% 94%,rgba(156,47,82,.14) 0 100px,transparent 101px)',o:'❁',h:PF,s:SC}]
+];
+NT.forEach(([id,nm,bg,ink,ac,cd,x])=>{TH.push([id,nm,bg,ink,ac,cd]);X[id]=x;
+ const b=document.createElement('button');b.type='button';b.dataset.t=id;b.innerHTML='<i class="sw"></i>'+nm;
+ const s=b.firstChild;s.style.background=x.g;s.style.boxShadow='inset 0 -7px 0 '+ac;$('themes').append(b)});
+O.nikah.push(['mawar','Mawar'],['melati','Melati'],['sulur','Sulur klasik'],['daun','Daun laurel'],['lonceng','Lonceng'],['mahkota','Mahkota']);
+O.aqiqah.push(['kubah','Lengkung masjid'],['geometri','Bintang geometri'],['awan','Awan & bulan'],['teddy','Boneka beruang'],['pita','Pita']);
+O.tanah.push(['teddy','Boneka beruang'],['pohon','Pohon'],['awan','Awan & bulan'],['pita','Pita']);
+O.khitan.push(['kubah','Lengkung masjid'],['geometri','Bintang geometri'],['sulur','Sulur klasik']);
+O.tujuh.push(['melati','Melati'],['mawar','Mawar'],['pita','Pita'],['daun','Daun laurel']);
+O.ultah.push(['mahkota','Mahkota'],['pita','Pita'],['teddy','Boneka beruang'],['awan','Awan & bulan']);
+O.lain.push(['sulur','Sulur klasik'],['daun','Daun laurel'],['geometri','Bintang geometri'],['pohon','Pohon'],['mawar','Mawar']);
+O.nikah.push(['gapura','Gapura bunga'],['arabesk','Arabesk']);O.aqiqah.push(['arabesk','Arabesk']);O.khitan.push(['arabesk','Arabesk']);O.tujuh.push(['gapura','Gapura bunga']);O.ultah.push(['bendera','Bendera pesta'],['konfeti','Konfeti']);O.lain.push(['gapura','Gapura bunga'],['bendera','Bendera pesta'],['konfeti','Konfeti'],['arabesk','Arabesk']);
+for(const k in O){const sn=new Set();O[k]=O[k].filter(x=>!sn.has(x[0])&&sn.add(x[0]))}
+let cac='';
+$('ca').oninput=e=>{cac=e.target.value;render()};
+$('car').onclick=()=>{cac='';render()};
+const _r4=render;render=function(){_r4();if(cac)$('frame').style.setProperty('--t-ac',cac)};
+applyType();
+</script>
+
+
+</body></html>
