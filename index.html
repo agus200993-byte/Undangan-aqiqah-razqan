@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Studio Undangan Digital</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Pinyon+Script&family=DM+Sans:wght@400;500;700&family=Fredoka:wght@400;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Pinyon+Script&family=DM+Sans:wght@400;500;700&family=Amiri:wght@400;700&family=Fredoka:wght@400;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap">
 <style>
 :root{--bg:#f4efe8;--fg:#2a2420;--card:#fffdf9;--line:#ddd2c3;--ac:#8a3b2e;--mut:#7a6e63;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1815;--fg:#f0e9df;--card:#26221e;--line:#3b352f;--ac:#e0917f;--mut:#a89c8f}}
@@ -104,16 +104,33 @@ body.guest .frame{height:100dvh;max-width:480px;border:0;border-radius:0}
 .orns button{border-width:2px;padding:6px;font-size:12px}
 .orns button.on{border-color:var(--ac)}
 .osv{display:block;width:100%;height:auto;color:var(--ac);margin-bottom:2px}
+.sal{font-style:italic;font-size:19px;color:var(--t-ac);margin:0 0 10px}
+.sal:empty,.qt:empty{display:none}
+.cover>.crn{position:absolute;width:62px;height:62px;color:var(--t-ac);z-index:1;opacity:.9}
+.cover>.c1{top:14px;left:14px}.cover>.c2{top:14px;right:14px;transform:scaleX(-1)}
+.cover>.c3{bottom:14px;left:14px;transform:scaleY(-1)}.cover>.c4{bottom:14px;right:14px;transform:scale(-1)}
+.sec .qt div{margin:4px 0}
+.sec .qt .ar{direction:rtl;font-family:'Amiri','Noto Naskh Arabic','Traditional Arabic',serif;font-style:normal;font-size:25px;line-height:2;margin:16px 0 4px}
+.sec .qt>:first-child{margin-top:0}
+.sec .qt{font-style:italic;font-size:17px;white-space:pre-line;border-top:1px solid color-mix(in srgb,var(--t-ac) 45%,transparent);margin-top:18px;padding-top:14px}
 </style>
 </head>
 <body class="v-edit">
+<svg width='0' height='0' style='position:absolute' aria-hidden='true'><defs>
+<g id='oc' fill='none' stroke='currentColor' stroke-width='2.5'><rect x='-12' y='-12' width='24' height='24'/><rect x='-12' y='-12' width='24' height='24' transform='rotate(45)'/><circle r='3' fill='currentColor'/></g>
+</defs>
+<symbol id='o-gapura' viewBox='0 0 300 110'><g fill='none' stroke='currentColor'><path d='M72 104V58Q72 14 150 14Q228 14 228 58V104' stroke-width='5'/><path d='M86 104V60Q86 28 150 28Q214 28 214 60V104' stroke-width='1.5'/></g><use href='#fl' transform='translate(74,60) scale(.8)'/><use href='#fl' transform='translate(84,36) scale(.8)'/><use href='#fl' transform='translate(108,20) scale(.8)'/><use href='#fl' transform='translate(150,14)'/><use href='#fl' transform='translate(192,20) scale(.8)'/><use href='#fl' transform='translate(216,36) scale(.8)'/><use href='#fl' transform='translate(226,60) scale(.8)'/><use href='#fl' transform='translate(72,92)'/><use href='#fl' transform='translate(228,92)'/><path d='M118 104Q150 90 182 104Z'/></symbol>
+<symbol id='o-arabesk' viewBox='0 0 300 110'><path d='M0 28H300M0 84H300' fill='none' stroke='currentColor' stroke-width='2'/><use href='#oc' transform='translate(50,56) scale(1.5)'/><use href='#oc' transform='translate(100,56) scale(1.5)'/><use href='#oc' transform='translate(150,56) scale(2.1)'/><use href='#oc' transform='translate(200,56) scale(1.5)'/><use href='#oc' transform='translate(250,56) scale(1.5)'/></symbol>
+<symbol id='o-bendera' viewBox='0 0 300 110'><g transform='translate(0,28)'><path d='M0 20Q150 60 300 20' fill='none' stroke='currentColor' stroke-width='2'/><path d='M18 27L42 27L30 53ZM78 37L102 37L90 63ZM138 40L162 40L150 66ZM198 37L222 37L210 63ZM258 27L282 27L270 53Z'/><path fill-opacity='.55' d='M48 33L72 33L60 59ZM108 39L132 39L120 65ZM168 39L192 39L180 65ZM228 33L252 33L240 59Z'/></g><use href='#st' transform='translate(150,16) scale(2)'/><use href='#st' transform='translate(40,14)'/><use href='#st' transform='translate(260,14)'/></symbol>
+<symbol id='o-konfeti' viewBox='0 0 300 110'><circle cx='40' cy='40' r='4'/><circle cx='80' cy='76' r='3'/><circle cx='125' cy='28' r='4'/><circle cx='178' cy='66' r='3.5'/><circle cx='232' cy='34' r='4'/><circle cx='268' cy='74' r='3'/><rect x='60' y='30' width='10' height='4' transform='rotate(30 65 32)'/><rect x='104' y='70' width='10' height='4' transform='rotate(-25 109 72)'/><rect x='196' y='38' width='10' height='4' transform='rotate(40 201 40)'/><rect x='246' y='58' width='10' height='4' transform='rotate(-35 251 60)'/><path d='M14 98Q34 68 54 98T94 98M206 98Q226 68 246 98T286 98' fill='none' stroke='currentColor' stroke-width='3'/><use href='#st' transform='translate(150,52) scale(2.6)'/><use href='#st' transform='translate(70,56) scale(1.3)'/><use href='#st' transform='translate(235,74) scale(1.5)'/></symbol>
+</svg>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="msq" viewBox="0 0 300 110"><path fill="currentColor" d="M0 100H300V110H0Z M110 100V70Q110 40 150 38Q190 40 190 70V100Z M148 38V28H152V38Z M153 12A6.5 6.5 0 1 0 153 28A5 5 0 1 1 153 12Z M68 100V84Q68 68 88 66Q108 68 108 84V100Z M192 100V84Q192 68 212 66Q232 68 232 84V100Z M32 100V42L38 22L44 42V100Z M29 54H47V58H29Z M256 100V42L262 22L268 42V100Z M253 54H271V58H253Z"/></symbol>
 <defs>
 <g id="st"><path d="M0-9L2.6-3 9-2.8 4 1.5 5.6 8 0 4.5-5.6 8-4 1.5-9-2.8-2.6-3Z"/></g>
 <g id="fl"><g fill-opacity=".6"><circle cy="-9" r="8"/><circle cx="9" cy="-3" r="8"/><circle cx="6" cy="8" r="8"/><circle cx="-6" cy="8" r="8"/><circle cx="-9" cy="-3" r="8"/></g><circle r="4"/></g>
 <g id="fp"><ellipse cy="8" rx="9" ry="14"/><circle cx="-9" cy="-9" r="3.2"/><circle cx="-4.5" cy="-13" r="3"/><circle cx="1" cy="-14" r="3"/><circle cx="6" cy="-12" r="2.8"/><circle cx="10" cy="-8" r="2.5"/></g>
 <g id="sh"><circle cx="-22" cy="-32" r="14"/><circle cx="-6" cy="-40" r="17"/><circle cx="12" cy="-36" r="15"/><circle cx="28" cy="-30" r="13"/><circle cx="-34" cy="-24" r="11"/><ellipse cx="46" cy="-28" rx="8" ry="10"/><ellipse cx="40" cy="-35" rx="3" ry="6"/><path d="M-26 -22h4V0h-4zM-10 -22h4V0h-4zM10 -22h4V0h-4zM24 -22h4V0h-4z"/></g>
-<g id="pl"><path d="M0 0V-40" stroke="currentColor" stroke-width="4" fill="none"/><path d="M0-34Q-20-60-38-50Q-24-28 0-34Z"/><path d="M0-40Q20-70 40-62Q26-38 0-40Z"/></g>
+<g id="plt"><path d="M0 0V-40" stroke="currentColor" stroke-width="4" fill="none"/><path d="M0-34Q-20-60-38-50Q-24-28 0-34Z"/><path d="M0-40Q20-70 40-62Q26-38 0-40Z"/></g>
 <g id="ln"><path d="M-8 0H8L12 10H-12Z"/><path d="M-14 12H14Q18 32 14 50H-14Q-18 32-14 12Z"/><path d="M-12 52H12L8 60H-8Z"/><circle cy="-5" r="3"/></g>
 <g id="bf"><path d="M0 0Q-30-40-48-22Q-52-2 0 0Z"/><path d="M0 0Q30-40 48-22Q52-2 0 0Z"/><path d="M0 2Q-28 8-30 28Q-12 34 0 2Z"/><path d="M0 2Q28 8 30 28Q12 34 0 2Z"/><rect x="-2" y="-14" width="4" height="34" rx="2"/></g>
 </defs>
@@ -126,7 +143,7 @@ body.guest .frame{height:100dvh;max-width:480px;border:0;border-radius:0}
 <symbol id="o-bayi" viewBox="0 0 300 110"><rect x="88" y="52" width="24" height="46" rx="6"/><rect x="92" y="40" width="16" height="12" rx="3"/><path d="M96 40Q100 20 104 40Z"/><circle cx="200" cy="50" r="18"/><rect x="197" y="66" width="6" height="32" rx="3"/><use href="#st" transform="translate(150,40) scale(2.4)"/><use href="#st" transform="translate(250,70) scale(1.6)"/><use href="#st" transform="translate(45,60) scale(1.6)"/></symbol>
 <symbol id="o-telapak" viewBox="0 0 300 110"><use href="#fp" transform="translate(60,74) rotate(-12) scale(1.3)"/><use href="#fp" transform="translate(115,44) rotate(-12) scale(1.3)"/><use href="#fp" transform="translate(185,74) rotate(-12) scale(1.3)"/><use href="#fp" transform="translate(240,44) rotate(-12) scale(1.3)"/></symbol>
 <symbol id="o-tangga" viewBox="0 0 300 110"><g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"><path d="M80 100L110 26M150 100L180 26"/><path d="M84.5 89H154.5M90.5 74H160.5M96.5 59H166.5M102.5 44.5H172.5M108.5 29.7H178.5" stroke-width="4"/></g><path d="M110 26Q92 8 70 12Q90 26 110 26ZM180 26Q198 8 220 12Q200 26 180 26Z"/><use href="#fp" transform="translate(236,76) rotate(-10)"/><use href="#fp" transform="translate(40,76) rotate(-10)"/><rect y="98" width="300" height="3"/></symbol>
-<symbol id="o-tunas" viewBox="0 0 300 110"><path d="M0 100Q150 88 300 100V104H0Z"/><use href="#pl" transform="translate(90,98) scale(1.3)"/><use href="#pl" transform="translate(210,98)"/><use href="#pl" transform="translate(150,96) scale(.8)"/></symbol>
+<symbol id="o-tunas" viewBox="0 0 300 110"><path d="M0 100Q150 88 300 100V104H0Z"/><use href="#plt" transform="translate(90,98) scale(1.3)"/><use href="#plt" transform="translate(210,98)"/><use href="#plt" transform="translate(150,96) scale(.8)"/></symbol>
 <symbol id="o-lentera" viewBox="0 0 300 110"><use href="#ln" transform="translate(70,40)"/><use href="#ln" transform="translate(150,22) scale(1.25)"/><use href="#ln" transform="translate(230,40)"/><rect y="100" width="300" height="3"/></symbol>
 <symbol id="o-kendi" viewBox="0 0 300 110"><ellipse cx="150" cy="72" rx="24" ry="26"/><path d="M142 50H158L156 32H144Z"/><rect x="140" y="26" width="20" height="5" rx="2"/><path d="M172 66Q192 60 198 40Q196 68 176 80Z"/><rect x="134" y="96" width="32" height="5" rx="2"/><use href="#fl" transform="translate(70,80) scale(1.2)"/><use href="#fl" transform="translate(235,80) scale(1.2)"/><use href="#fl" transform="translate(102,90) scale(.8)"/></symbol>
 <symbol id="o-kupu" viewBox="0 0 300 110"><use href="#bf" transform="translate(150,52) scale(1.3)"/><use href="#bf" transform="translate(68,70) rotate(-15) scale(.7)"/><use href="#bf" transform="translate(238,40) rotate(12) scale(.8)"/><use href="#fl" transform="translate(40,92) scale(.8)"/><use href="#fl" transform="translate(262,94) scale(.8)"/></symbol>
@@ -134,6 +151,29 @@ body.guest .frame{height:100dvh;max-width:480px;border:0;border-radius:0}
 <symbol id="o-kue" viewBox="0 0 300 110"><rect x="100" y="72" width="100" height="26" rx="4"/><rect x="115" y="47" width="70" height="22" rx="4"/><rect x="130" y="28" width="40" height="16" rx="3"/><rect x="143" y="12" width="4" height="14"/><rect x="153" y="12" width="4" height="14"/><ellipse cx="145" cy="8" rx="2.5" ry="4"/><ellipse cx="155" cy="8" rx="2.5" ry="4"/><rect x="80" y="100" width="140" height="4" rx="2"/><use href="#st" transform="translate(52,50) scale(1.8)"/><use href="#st" transform="translate(248,50) scale(1.8)"/><use href="#st" transform="translate(80,80) scale(1.1)"/><use href="#st" transform="translate(222,80) scale(1.1)"/></symbol>
 <symbol id="o-hadiah" viewBox="0 0 300 110"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"><rect x="110" y="60" width="80" height="40"/><rect x="104" y="46" width="92" height="14"/><path d="M150 46V100M150 46Q130 22 122 34Q120 46 150 46Q180 46 178 34Q170 22 150 46Z"/></g><use href="#st" transform="translate(60,50) scale(1.8)"/><use href="#st" transform="translate(240,50) scale(1.8)"/><use href="#st" transform="translate(75,86) scale(1.1)"/><use href="#st" transform="translate(225,86) scale(1.1)"/></symbol>
 <symbol id="o-bintang" viewBox="0 0 300 110"><use href="#st" transform="translate(150,52) scale(4)"/><use href="#st" transform="translate(80,62) scale(2.2)"/><use href="#st" transform="translate(220,62) scale(2.2)"/><use href="#st" transform="translate(40,82) scale(1.4)"/><use href="#st" transform="translate(260,84) scale(1.4)"/><use href="#st" transform="translate(110,28) scale(1.2)"/><use href="#st" transform="translate(190,26) scale(1.2)"/></symbol>
+<symbol id='crn' viewBox='0 0 60 60'><path d='M4 58V22Q4 4 22 4H58' fill='none' stroke='currentColor' stroke-width='2'/><path d='M12 58V30Q12 12 30 12H58' fill='none' stroke='currentColor' stroke-width='1' opacity='.6'/><circle cx='4' cy='4' r='3.5'/><path d='M20 20Q34 20 34 34Q20 34 20 20Z'/><circle cx='46' cy='4' r='1.8'/><circle cx='4' cy='46' r='1.8'/></symbol>
+<defs>
+<g id='lf'><path d='M0 0Q9-14 0-28Q-9-14 0 0Z'/></g>
+<g id='rsx'><circle r='11' fill-opacity='.35'/><path d='M0-9Q9-9 9 0Q9 9 0 9Q-7 9-7 2Q-7-4 0-4Q4-4 4 0' fill='none' stroke='currentColor' stroke-width='2'/></g>
+<g id='jm'><g fill-opacity='.75'><ellipse cy='-7' rx='3' ry='7'/><ellipse cy='-7' rx='3' ry='7' transform='rotate(72)'/><ellipse cy='-7' rx='3' ry='7' transform='rotate(144)'/><ellipse cy='-7' rx='3' ry='7' transform='rotate(216)'/><ellipse cy='-7' rx='3' ry='7' transform='rotate(288)'/></g><circle r='2.5'/></g>
+<g id='bl'><path d='M0-24Q-22-24-24 6L-30 20H30L24 6Q22-24 0-24Z'/><circle cy='24' r='5'/><circle cy='-27' r='3'/></g>
+<g id='s8'><rect x='-10' y='-10' width='20' height='20'/><rect x='-10' y='-10' width='20' height='20' transform='rotate(45)'/></g>
+<g id='cdl'><circle r='14'/><circle cx='18' cy='-6' r='18'/><circle cx='40' cy='0' r='14'/><rect x='-14' y='0' width='68' height='14' rx='7'/></g>
+<g id='br'><path d='M30 86Q90 100 142 94' fill='none' stroke='currentColor' stroke-width='2.5'/><use href='#lf' transform='translate(40,85) rotate(-70)'/><use href='#lf' transform='translate(62,89) rotate(-55)'/><use href='#lf' transform='translate(84,92) rotate(-40)'/><use href='#lf' transform='translate(106,94) rotate(-25)'/><use href='#lf' transform='translate(128,95) rotate(-10)'/><use href='#lf' transform='translate(52,88) rotate(-125)'/><use href='#lf' transform='translate(74,92) rotate(-140)'/><use href='#lf' transform='translate(96,95) rotate(-155)'/></g>
+<g id='sc' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round'><path d='M142 70Q120 70 110 56Q100 42 84 46Q68 52 74 66Q80 76 92 70Q98 66 94 60'/><path d='M110 56Q96 30 70 32Q52 34 46 50'/><path d='M46 50Q40 62 26 60'/></g>
+</defs>
+<symbol id='o-daun' viewBox='0 0 300 110'><use href='#br'/><use href='#br' transform='translate(300,0) scale(-1,1)'/><path d='M150 60l8 12-8 12-8-12z'/></symbol>
+<symbol id='o-mawar' viewBox='0 0 300 110'><path d='M0 92Q75 78 150 92T300 92' fill='none' stroke='currentColor' stroke-width='3'/><use href='#lf' transform='translate(100,88) rotate(-50)'/><use href='#lf' transform='translate(95,88) rotate(50)'/><use href='#lf' transform='translate(205,88) rotate(50)'/><use href='#lf' transform='translate(200,88) rotate(-50)'/><use href='#rsx' transform='translate(60,70) scale(1.5)'/><use href='#rsx' transform='translate(150,58) scale(2.2)'/><use href='#rsx' transform='translate(240,70) scale(1.5)'/></symbol>
+<symbol id='o-sulur' viewBox='0 0 300 110'><use href='#sc'/><use href='#sc' transform='translate(300,0) scale(-1,1)'/><path d='M150 56l9 14-9 14-9-14z'/><circle cx='150' cy='40' r='3'/><circle cx='150' cy='100' r='3'/></symbol>
+<symbol id='o-melati' viewBox='0 0 300 110'><path d='M10 40Q150 110 290 40' fill='none' stroke='currentColor' stroke-width='2'/><use href='#jm' transform='translate(44,55) scale(1.3)'/><use href='#jm' transform='translate(80,66) scale(1.3)'/><use href='#jm' transform='translate(116,73) scale(1.3)'/><use href='#jm' transform='translate(150,75) scale(1.5)'/><use href='#jm' transform='translate(184,73) scale(1.3)'/><use href='#jm' transform='translate(220,66) scale(1.3)'/><use href='#jm' transform='translate(256,55) scale(1.3)'/><path d='M150 84V90' stroke='currentColor' stroke-width='2'/><use href='#jm' transform='translate(150,96) scale(.9)'/></symbol>
+<symbol id='o-mahkota' viewBox='0 0 300 110'><path d='M105 90L112 48L132 70L150 38L168 70L188 48L195 90Z'/><circle cx='112' cy='43' r='5'/><circle cx='150' cy='33' r='5'/><circle cx='188' cy='43' r='5'/><rect x='104' y='92' width='92' height='8' rx='3'/><use href='#st' transform='translate(60,56) scale(1.8)'/><use href='#st' transform='translate(240,56) scale(1.8)'/><use href='#st' transform='translate(80,86) scale(1.1)'/><use href='#st' transform='translate(220,86) scale(1.1)'/></symbol>
+<symbol id='o-lonceng' viewBox='0 0 300 110'><use href='#bl' transform='translate(118,56) rotate(-12) scale(1.2)'/><use href='#bl' transform='translate(182,56) rotate(12) scale(1.2)'/><use href='#fl' transform='translate(50,84) scale(1.2)'/><use href='#fl' transform='translate(250,84) scale(1.2)'/><use href='#lf' transform='translate(84,98) rotate(-70)'/><use href='#lf' transform='translate(216,98) rotate(70)'/></symbol>
+<symbol id='o-geometri' viewBox='0 0 300 110'><rect y='30' width='300' height='2'/><rect y='90' width='300' height='2'/><use href='#s8' transform='translate(30,60)'/><use href='#s8' transform='translate(70,60)'/><use href='#s8' transform='translate(110,60)'/><use href='#s8' transform='translate(150,60) scale(1.6)'/><use href='#s8' transform='translate(190,60)'/><use href='#s8' transform='translate(230,60)'/><use href='#s8' transform='translate(270,60)'/><path transform='translate(50,60)' d='M0-5L5 0 0 5-5 0Z'/><path transform='translate(90,60)' d='M0-5L5 0 0 5-5 0Z'/><path transform='translate(130,60)' d='M0-5L5 0 0 5-5 0Z'/><path transform='translate(170,60)' d='M0-5L5 0 0 5-5 0Z'/><path transform='translate(210,60)' d='M0-5L5 0 0 5-5 0Z'/><path transform='translate(250,60)' d='M0-5L5 0 0 5-5 0Z'/></symbol>
+<symbol id='o-kubah' viewBox='0 0 300 110'><g fill='none' stroke='currentColor'><path d='M95 100V60Q95 22 150 16Q205 22 205 60V100' stroke-width='4'/><path d='M115 100V64Q115 38 150 32Q185 38 185 64V100' stroke-width='2'/></g><use href='#st' transform='translate(150,58) scale(2.2)'/><rect x='82' y='56' width='6' height='44'/><rect x='212' y='56' width='6' height='44'/><use href='#st' transform='translate(45,60) scale(1.6)'/><use href='#st' transform='translate(255,60) scale(1.6)'/><use href='#st' transform='translate(62,90) scale(1.1)'/><use href='#st' transform='translate(238,90) scale(1.1)'/></symbol>
+<symbol id='o-awan' viewBox='0 0 300 110'><use href='#cdl' transform='translate(30,66)'/><use href='#cdl' transform='translate(170,52) scale(1.3)'/><use href='#cdl' transform='translate(100,90) scale(.7)'/><path d='M130 14A15 15 0 1 0 130 44A11 11 0 1 1 130 14Z'/><use href='#st' transform='translate(72,30) scale(1.6)'/><use href='#st' transform='translate(268,30) scale(1.4)'/><use href='#st' transform='translate(250,88) scale(1.2)'/></symbol>
+<symbol id='o-teddy' viewBox='0 0 300 110'><g fill='none' stroke='currentColor' stroke-width='3'><circle cx='150' cy='56' r='22'/><circle cx='131' cy='36' r='8'/><circle cx='169' cy='36' r='8'/><ellipse cx='150' cy='63' rx='9' ry='7'/><ellipse cx='150' cy='94' rx='20' ry='14'/><ellipse cx='124' cy='88' rx='6' ry='10' transform='rotate(25 124 88)'/><ellipse cx='176' cy='88' rx='6' ry='10' transform='rotate(-25 176 88)'/></g><circle cx='142' cy='52' r='2.6'/><circle cx='158' cy='52' r='2.6'/><ellipse cx='150' cy='61' rx='3' ry='2'/><use href='#st' transform='translate(70,50) scale(1.8)'/><use href='#st' transform='translate(230,50) scale(1.8)'/><use href='#st' transform='translate(90,86) scale(1.1)'/><use href='#st' transform='translate(212,86) scale(1.1)'/></symbol>
+<symbol id='o-pita' viewBox='0 0 300 110'><path d='M150 55Q100 20 82 44Q70 66 150 60Z'/><path d='M150 55Q200 20 218 44Q230 66 150 60Z'/><rect x='139' y='48' width='22' height='20' rx='6'/><path d='M145 66L118 100L137 94L146 100Z'/><path d='M155 66L182 100L163 94L154 100Z'/><use href='#st' transform='translate(50,60) scale(1.6)'/><use href='#st' transform='translate(250,60) scale(1.6)'/></symbol>
+<symbol id='o-pohon' viewBox='0 0 300 110'><g fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round'><path d='M150 100V58M150 80Q125 72 112 54M150 80Q175 72 188 54M150 66Q136 54 130 36M150 66Q164 54 170 36'/></g><use href='#lf' transform='translate(112,54) rotate(-40)'/><use href='#lf' transform='translate(188,54) rotate(40)'/><use href='#lf' transform='translate(130,36) rotate(-20)'/><use href='#lf' transform='translate(170,36) rotate(20)'/><use href='#lf' transform='translate(150,58) scale(1.2)'/><rect y='98' width='300' height='3'/><use href='#st' transform='translate(60,50) scale(1.6)'/><use href='#st' transform='translate(240,50) scale(1.6)'/></symbol>
 <symbol id="o-rumah" viewBox="0 0 300 110"><g fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"><path d="M104 100V62L150 26L196 62V100Z"/><path d="M134 100V76H166V100"/></g><circle cx="60" cy="72" r="18"/><rect x="58" y="86" width="4" height="14"/><circle cx="240" cy="72" r="18"/><rect x="238" y="86" width="4" height="14"/><rect y="98" width="300" height="3"/></symbol>
 </svg>
 <main class="app">
@@ -149,11 +189,14 @@ body.guest .frame{height:100dvh;max-width:480px;border:0;border-radius:0}
   <div class="row"><div><label for="dt">Tanggal</label><input id="dt" type="date" value="2027-03-20"></div><div><label for="tm">Jam</label><input id="tm" type="time" value="10:00"></div></div>
   <label for="pl">Tempat</label><input id="pl" value="Gedung Serbaguna Melati, Bandung">
   <label for="ms">Kata sambutan</label><textarea id="ms"></textarea>
+  <label for="rl">Agama (salam &amp; kutipan)</label><select id="rl"></select>
+  <label for="qt">Hadis / ayat / kutipan (bisa diedit)</label><textarea id="qt" dir="auto" style="min-height:130px"></textarea>
   <label for="pf">Foto (maks. 6, opsional)</label>
   <input id="pf" type="file" accept="image/*" multiple><div class="ths" id="ths"></div><p class="hint">Ketuk sebuah foto untuk menjadikannya latar bagian waktu &amp; tempat.</p>
   <button id="pdel" type="button" class="hid" style="margin-top:6px">Hapus semua foto</button>
   <label>Tema</label>
   <div class="themes" id="themes"></div>
+  <label for='ca'>Warna aksen sendiri (opsional)</label><div class='mus'><input id='ca' type='color' value='#b08a35' style='width:64px;padding:2px;height:42px'><button id='car' type='button'>Pakai warna tema</button></div>
   <label>Ornamen</label><div class="orns" id="orns"></div>
   <label for="song">Musik latar</label>
   <div class="mus"><select id="song"></select><button id="tryM" type="button">Coba</button></div>
@@ -178,7 +221,7 @@ body.guest .frame{height:100dvh;max-width:480px;border:0;border-radius:0}
 <section class="pv">
  <div class="frame" id="frame">
   <div class="cover" id="cover">
-   <svg class="msq" viewBox="0 0 300 110" aria-hidden="true"><use href="#msq"/></svg><div class="em" id="cvE"></div>
+   <svg class="msq" viewBox="0 0 300 110" aria-hidden="true"><use href="#msq"/></svg><svg class='crn c1' viewBox='0 0 60 60' aria-hidden='true'><use href='#crn'/></svg><svg class='crn c2' viewBox='0 0 60 60' aria-hidden='true'><use href='#crn'/></svg><svg class='crn c3' viewBox='0 0 60 60' aria-hidden='true'><use href='#crn'/></svg><svg class='crn c4' viewBox='0 0 60 60' aria-hidden='true'><use href='#crn'/></svg><div class="em" id="cvE"></div>
    <p id="cvL"></p>
    <img class="ph" id="cvP" alt="Foto">
    <div class="script" id="cvN"></div>
@@ -187,7 +230,7 @@ body.guest .frame{height:100dvh;max-width:480px;border:0;border-radius:0}
   </div>
   <button class="mbtn" id="mbtn" aria-label="Putar atau jeda musik">♪</button>
   <div class="scroll" id="scr">
-   <div class="sec"><svg class="msq" viewBox="0 0 300 110" aria-hidden="true"><use href="#msq"/></svg><p id="hI"></p><img class="ph" id="hP" alt="Foto"><div class="script" id="hN"></div><p id="hX"></p><p id="hM"></p></div>
+   <div class="sec"><p id="hS" class="sal"></p><svg class="msq" viewBox="0 0 300 110" aria-hidden="true"><use href="#msq"/></svg><p id="hI"></p><img class="ph" id="hP" alt="Foto"><div class="script" id="hN"></div><p id="hX"></p><p id="hM"></p><p id="hQ" class="qt"></p></div>
    <div class="sec hid" id="gal"><h2>Galeri</h2><div class="gal" id="galg"></div></div>
    <div class="sec"><h2>Menuju hari bahagia</h2><div class="cd" id="cd"></div></div>
    <div class="sec" id="evs"><h2>Waktu &amp; tempat</h2><p id="eD"></p><p id="eT"></p><p id="eP"></p><a id="map" target="_blank" rel="noopener"><button class="cbtn" type="button">Buka peta</button></a></div>
@@ -197,7 +240,7 @@ body.guest .frame{height:100dvh;max-width:480px;border:0;border-radius:0}
     <button class="cbtn" id="rsvp" type="button">Kirim ucapan</button>
     <div id="wishes"></div>
    </div>
-   <div class="sec" style="border:0"><svg class="msq" viewBox="0 0 300 110" aria-hidden="true"><use href="#msq"/></svg><p>Terima kasih atas doa dan kehadiran Anda.</p><div class="script" id="fN"></div></div>
+   <div class="sec" style="border:0"><svg class="msq" viewBox="0 0 300 110" aria-hidden="true"><use href="#msq"/></svg><p>Terima kasih atas doa dan kehadiran Anda.</p><p id="fS" class="sal"></p><div class="script" id="fN"></div></div>
   </div>
  </div>
  <div class="acts"><button id="rep">Tutup &amp; ulangi</button><button class="pri" id="cp">Salin teks undangan</button></div>
@@ -366,7 +409,7 @@ async function list(){if(!db)return;try{const s=await db.collection('invites').o
 const cp2=(s,b)=>{const o=b.textContent,ok=()=>{b.textContent='Tersalin ✓';setTimeout(()=>b.textContent=o,1600)};try{navigator.clipboard.writeText(s).then(ok,()=>prompt('Salin:',s))}catch(e){prompt('Salin:',s)}};
 $('cl').onclick=()=>cp2(link(),$('cl'));
 $('cw').onclick=()=>{const t=T[type],g=$('gn').value.trim(),d=fmt(),nm=t.b?$('n1').value+' & '+$('n2').value:$('n1').value;
- cp2(`Kepada Yth. ${g||'Bapak/Ibu/Saudara/i'},\n\nDengan hormat, kami mengundang Anda ke acara ${type==='lain'?'':t.l.toLowerCase()+' '}${nm}${isNaN(d)?'':' pada '+d.toLocaleDateString('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric'})}.\n\nBuka undangan digital kami di sini:\n${link()}\n\nTerima kasih atas doa dan kehadirannya.`,$('cw'))};
+ cp2(`${R[rel].o}\n\nKepada Yth. ${g||'Bapak/Ibu/Saudara/i'},\n\nDengan hormat, kami mengundang Anda ke acara ${type==='lain'?'':t.l.toLowerCase()+' '}${nm}${isNaN(d)?'':' pada '+d.toLocaleDateString('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric'})}.\n\nBuka undangan digital kami di sini:\n${link()}\n\nTerima kasih atas doa dan kehadirannya.`,$('cw'))};
 function err(t){const c=$('cover');c.className='cover';c.textContent=t}
 async function route(){
  const m=location.hash.match(/^#([a-z0-9]{6})(?:-([a-z0-9-]+))?$/);
@@ -421,17 +464,17 @@ function drawOrn(){const box=$('orns');box.textContent='';
  [...O[type],['none','Tanpa ornamen']].forEach(([id,nm])=>{const b=document.createElement('button');b.type='button';b.className=id===orn?'on':'';
   b.innerHTML=id==='none'?'<span class="osv" style="padding:14px 0;font-size:18px">—</span>':`<svg class="osv" viewBox="0 0 300 110" aria-hidden="true"><use href="#${id==='masjid'?'msq':'o-'+id}"/></svg>`;
   b.append(nm);b.onclick=()=>{orn=id;drawOrn();render()};box.append(b)})}
-const _a=applyType;applyType=function(){_a();orn=O[type][0][0];drawOrn();render()};
+const _a=applyType;applyType=function(){_a();orn=O[type][0][0];drawOrn();setQ();render()};
 const _f=fill;fill=function(d,id){_f(d,id);
  photos=(d.photos||[]).map(i=>({id:i,src:'/_blob/'+i}));if(!photos.length&&d.photo)photos=[{id:'',src:d.photo}];if(d.phd)photos=d.phd.map(s=>({id:'',src:s}));
- bg=d.bg>=0?d.bg:0;orn=d.orn||(d.mosque?'masjid':'none');$('wa').value=d.wa||'';drawOrn();draw()};
+ bg=d.bg>=0?d.bg:0;orn=d.orn||(d.mosque?'masjid':'none');cac=d.ca||'';if(cac)$('ca').value=cac;rel=d.rel||'umum';$('rl').value=rel;$('qt').value=d.qt!==undefined?d.qt:'';$('wa').value=d.wa||'';drawOrn();draw()};
 $('save').onclick=async()=>{
  if(!db){alert('Penyimpanan belum aktif. Buka halaman ini lewat tautan artifact dan masuk ke akun Anda.');return}
  const id=curId||(Math.random().toString(36)+'000000').slice(2,8);let sg=$('song').value,nt='';
  if(sg==='custom'&&!musicId){sg='0';nt='Musik sendiri belum bisa dibagikan, jadi undangan memakai musik bawaan. '}
  const ph=photos.filter(p=>p.id),bi=photos[bg]&&photos[bg].id?ph.findIndex(p=>p.id===photos[bg].id):-1;
  if(ph.length<photos.length)nt+='Sebagian foto belum terunggah sehingga tidak ikut dibagikan.';
- const d={type,n1:$('n1').value,n2:$('n2').value,xx:$('xx').value,dt:$('dt').value,tm:$('tm').value,pl:$('pl').value,ms:$('ms').value,theme,photo:'',photos:ph.map(p=>p.id),bg:bi,orn,wa:$('wa').value,song:sg,musicId,musicName,t:Date.now()};
+ const d={type,n1:$('n1').value,n2:$('n2').value,xx:$('xx').value,dt:$('dt').value,tm:$('tm').value,pl:$('pl').value,ms:$('ms').value,theme,photo:'',photos:ph.map(p=>p.id),bg:bi,orn,rel,qt:$('qt').value,ca:cac,wa:$('wa').value,song:sg,musicId,musicName,t:Date.now()};
  try{await db.doc('invites/'+id).set(d)}catch(e){alert('Gagal menyimpan: '+(e.message||e.code));return}
  curId=id;$('shr').classList.remove('hid');updLink();watch();list();$('save').textContent='Simpan perubahan';if(nt)alert(nt.trim())};
 let dls;
@@ -451,7 +494,7 @@ $('dl').onclick=async()=>{
   let music='';
   if($('song').value==='custom'&&musicId){try{const bl=await(await fetch('/_blob/'+musicId)).blob();if(bl.size<4e6)music=await rd(bl)}catch(e){}}
   const cu=$('song').value==='custom';
-  const inv={type,n1:$('n1').value,n2:$('n2').value,xx:$('xx').value,dt:$('dt').value,tm:$('tm').value,pl:$('pl').value,ms:$('ms').value,theme,phd,bg,orn,wa:$('wa').value,guest:$('gn').value.trim(),song:cu?(music?'custom':'0'):$('song').value,musicId:music?'emb':'',musicName,music,t:Date.now()};
+  const inv={type,n1:$('n1').value,n2:$('n2').value,xx:$('xx').value,dt:$('dt').value,tm:$('tm').value,pl:$('pl').value,ms:$('ms').value,theme,phd,bg,orn,rel,qt:$('qt').value,ca:cac,wa:$('wa').value,guest:$('gn').value.trim(),song:cu?(music?'custom':'0'):$('song').value,musicId:music?'emb':'',musicName,music,t:Date.now()};
   const root=document.documentElement.cloneNode(true);
   root.querySelectorAll('script:not(#app),base,meta[http-equiv]').forEach(e=>e.remove());
   root.querySelector('title').textContent='Undangan '+inv.n1;
@@ -461,6 +504,87 @@ $('dl').onclick=async()=>{
   await dls.save({filename:'undangan-'+nm+'.html',data:'<!DOCTYPE html>\n'+root.outerHTML});
  }catch(e){if(!e||e.code!=='declined')alert('Gagal menyiapkan file: '+((e&&e.message)||e))}
  b.textContent=o;b.disabled=false};
+const R={
+ islam:{n:'Islam',o:'Assalamu’alaikum Warahmatullahi Wabarakatuh',c:'Wassalamu’alaikum Warahmatullahi Wabarakatuh',q:{
+  nikah:'“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.” (QS. Ar-Rum: 21)\n\n“Semoga Allah memberkahimu, memberkahi atasmu, dan mengumpulkan kalian berdua dalam kebaikan.” (HR. Abu Dawud dan Tirmidzi)',
+  aqiqah:'“Setiap anak tergadai dengan aqiqahnya, disembelih (hewan) pada hari ketujuh kelahirannya, dicukur rambutnya, dan diberi nama.” (HR. Abu Dawud dan Tirmidzi)',
+  tanah:'“Apabila manusia meninggal dunia, terputuslah amalnya kecuali tiga perkara: sedekah jariyah, ilmu yang bermanfaat, atau anak saleh yang mendoakannya.” (HR. Muslim)',
+  khitan:'“Fitrah itu ada lima: khitan, mencukur bulu kemaluan, mencabut bulu ketiak, memotong kuku, dan memotong kumis.” (HR. Bukhari dan Muslim)',
+  tujuh:'“Sungguh, jika Engkau memberi kami anak yang saleh, tentulah kami akan selalu bersyukur.” (QS. Al-A’raf: 189)',
+  ultah:'“Sebaik-baik manusia adalah yang panjang umurnya dan baik amalnya.” (HR. Tirmidzi)',
+  lain:'“Barang siapa tidak berterima kasih kepada manusia, maka ia belum bersyukur kepada Allah.” (HR. Abu Dawud dan Tirmidzi)'}},
+ kristen:{n:'Kristen Protestan',o:'Salam sejahtera dalam kasih Tuhan Yesus Kristus',c:'Tuhan Yesus memberkati.',q:{
+  nikah:'“Kasih itu sabar; kasih itu murah hati; ia tidak cemburu. Ia tidak memegahkan diri dan tidak sombong.” (1 Korintus 13:4)',
+  anak:'“Sesungguhnya anak-anak adalah milik pusaka dari pada TUHAN, dan buah kandungan adalah suatu upah.” (Mazmur 127:3)',
+  ultah:'“Inilah hari yang dijadikan TUHAN, marilah kita bersorak-sorak dan bersukacita karenanya!” (Mazmur 118:24)'}},
+ katolik:{n:'Katolik',o:'Salam sejahtera dalam kasih Kristus',c:'Tuhan memberkati kita semua.',q:{
+  nikah:'“Karena itu, apa yang telah dipersatukan Allah, janganlah diceraikan manusia.” (Markus 10:9)',
+  anak:'“Biarkanlah anak-anak itu datang kepada-Ku, jangan menghalang-halangi mereka, sebab orang-orang yang seperti itulah yang empunya Kerajaan Allah.” (Markus 10:14)',
+  ultah:'“Inilah hari yang dijadikan TUHAN, marilah kita bersorak-sorak dan bersukacita karenanya!” (Mazmur 118:24)'}},
+ hindu:{n:'Hindu',o:'Om Swastyastu',c:'Om Shanti, Shanti, Shanti, Om',q:{
+  nikah:'“Berjalanlah bersama, berbicaralah bersama, dan biarlah pikiran kalian selaras.” (Rgveda X.191.2)',
+  anak:'“Sarve bhavantu sukhinah, sarve santu niramayah.” Semoga semua makhluk berbahagia, semoga semua sehat dan bebas dari penderitaan. (Doa Shanti)',
+  ultah:'“Sarve bhavantu sukhinah, sarve santu niramayah.” Semoga semua makhluk berbahagia, semoga semua sehat dan bebas dari penderitaan. (Doa Shanti)'}},
+ buddha:{n:'Buddha',o:'Namo Buddhaya',c:'Semoga semua makhluk berbahagia. Sadhu, sadhu, sadhu.',q:{
+  nikah:'“Menunjang ayah dan ibu, membantu istri dan anak, serta bekerja dengan tenteram, itulah berkah utama.” (Mangala Sutta)',
+  anak:'“Sabbe sattā bhavantu sukhitattā.” Semoga semua makhluk hidup berbahagia. (Karaniya Metta Sutta)',
+  ultah:'“Bagi orang yang selalu menghormati para sesepuh, empat hal akan bertambah: umur panjang, keindahan, kebahagiaan, dan kekuatan.” (Dhammapada 109)'}},
+ konghucu:{n:'Konghucu',o:'Salam Kebajikan',c:'Wei De Dong Tian — hanya kebajikan yang menggerakkan Tian.',q:{
+  nikah:'“Jalan seorang junzi (insan berbudi) bermula dari hubungan suami istri.” (Zhongyong 12)',
+  anak:'“Bukankah menyenangkan belajar dan mengulangnya pada waktunya?” (Lunyu 1:1)',
+  ultah:'“Pada usia lima belas tahun aku bertekad untuk belajar, pada usia tiga puluh aku berdiri teguh, pada usia empat puluh aku tidak lagi bimbang.” (Lunyu 2:4)'}},
+ umum:{n:'Umum (tanpa kutipan)',o:'Salam sejahtera',c:'',q:{}}
+};
+let rel='islam';
+const MP={aqiqah:'anak',tanah:'anak',khitan:'anak',tujuh:'anak',lain:'ultah'};
+const AR={
+ nikah:['وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً','بَارَكَ اللَّهُ لَكَ، وَبَارَكَ عَلَيْكَ، وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ'],
+ aqiqah:['كُلُّ غُلَامٍ رَهِينَةٌ بِعَقِيقَتِهِ، تُذْبَحُ عَنْهُ يَوْمَ سَابِعِهِ، وَيُحْلَقُ، وَيُسَمَّى'],
+ tanah:['إِذَا مَاتَ الْإِنْسَانُ انْقَطَعَ عَنْهُ عَمَلُهُ إِلَّا مِنْ ثَلَاثَةٍ: إِلَّا مِنْ صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ'],
+ khitan:['الْفِطْرَةُ خَمْسٌ: الْخِتَانُ، وَالِاسْتِحْدَادُ، وَنَتْفُ الْإِبِطِ، وَتَقْلِيمُ الْأَظْفَارِ، وَقَصُّ الشَّارِبِ'],
+ tujuh:['لَئِنْ آتَيْتَنَا صَالِحًا لَنَكُونَنَّ مِنَ الشَّاكِرِينَ'],
+ ultah:['خَيْرُ النَّاسِ مَنْ طَالَ عُمُرُهُ وَحَسُنَ عَمَلُهُ'],
+ lain:['مَنْ لَا يَشْكُرُ النَّاسَ لَا يَشْكُرُ اللَّهَ']
+};
+function setQ(){const q=R[rel].q;let t=q[type]||q[MP[type]]||'';
+ if(rel==='islam'&&AR[type])t=t.split('\n\n').map((b,i)=>(AR[type][i]?AR[type][i]+'\n':'')+b).join('\n\n');
+ $('qt').value=t}
+Object.entries(R).forEach(([k,v])=>$('rl').add(new Option(v.n,k)));
+$('rl').onchange=()=>{rel=$('rl').value;setQ();render()};
+$('qt').oninput=()=>render();
+function applyR(){$('hS').textContent=R[rel].o;$('fS').textContent=R[rel].c;
+ const q=$('hQ');q.textContent='';
+ $('qt').value.split('\n').forEach(l=>{l=l.trim();if(!l)return;const d=document.createElement('div');
+  if(/[\u0600-\u06FF]/.test(l)){d.className='ar';d.dir='rtl';d.lang='ar'}d.textContent=l;q.append(d)})}
+const _r3=render;render=function(){_r3();applyR()};
+const NT=[
+ ['rosegold','Rose Gold','#fbefe9','#4a2e2a','#b76e79','#fff8f5',{g:'linear-gradient(165deg,#fff8f5,#f4d9d2 60%,#ecc3bb)',p:'radial-gradient(circle at 90% 6%,rgba(183,110,121,.2) 0 80px,transparent 81px),radial-gradient(circle at 5% 95%,rgba(183,110,121,.16) 0 110px,transparent 111px)',o:'❁',h:PF,s:SC}],
+ ['navy','Navy Emas','#0f1e3a','#f3ead3','#d4af37','#172a4d',{g:'radial-gradient(ellipse at 50% 0,#1f3a6b,#0f1e3a 70%)',p:'radial-gradient(1.5px 1.5px at 20% 30%,#d4af37,transparent),radial-gradient(1px 1px at 70% 20%,#f3ead3,transparent),radial-gradient(1.5px 1.5px at 45% 75%,#f3ead3,transparent),radial-gradient(1px 1px at 88% 62%,#d4af37,transparent)',ps:'240px 280px',o:'✦',h:SER,s:SC}],
+ ['emerald','Zamrud','#e7f3ee','#12372b','#1f8a6a','#f4fbf8',{g:'linear-gradient(170deg,#f4fbf8,#cfe9df)',p:'repeating-linear-gradient(135deg,rgba(31,138,106,.07) 0 2px,transparent 2px 16px)',o:'❦',h:SER,s:SC}],
+ ['dusty','Biru Dusty','#edf1f6','#2c3a4d','#6f8fb0','#f8fafc',{g:'linear-gradient(170deg,#f8fafc,#d7e2ee)',p:'radial-gradient(circle at 92% 8%,rgba(111,143,176,.2) 0 70px,transparent 71px),radial-gradient(circle at 6% 92%,rgba(111,143,176,.16) 0 100px,transparent 101px)',o:'❋',h:PF,s:SC}],
+ ['terakota','Terakota','#f8ece3','#50281c','#c0623a','#fff7f0',{g:'linear-gradient(165deg,#fff7f0,#f0cdb8)',p:'repeating-linear-gradient(45deg,rgba(192,98,58,.08) 0 1px,transparent 1px 24px),repeating-linear-gradient(-45deg,rgba(192,98,58,.08) 0 1px,transparent 1px 24px)',o:'✶',h:PF,s:SC}],
+ ['mocha','Mocha','#f3ebe2','#3d2b1f','#8b6a4f','#fbf6f0',{g:'linear-gradient(165deg,#fbf6f0,#e5d5c3)',p:'radial-gradient(circle at 8% 10%,rgba(139,106,79,.16) 0 70px,transparent 71px),radial-gradient(circle at 94% 92%,rgba(139,106,79,.16) 0 90px,transparent 91px)',o:'❧',h:SER,s:SC}],
+ ['peach','Peach','#fff1e8','#5a3326','#ee8a6a','#fffaf6',{g:'linear-gradient(170deg,#fffaf6,#ffd9c6)',p:'radial-gradient(circle at 90% 8%,rgba(238,138,106,.2) 0 70px,transparent 71px),radial-gradient(circle at 8% 92%,rgba(238,138,106,.16) 0 100px,transparent 101px)',o:'❀',h:PF,s:SC}],
+ ['tosca','Tosca','#e6f6f5','#12413f','#2aa7a0','#f6fcfc',{g:'linear-gradient(170deg,#f6fcfc,#c8ecea)',p:'repeating-linear-gradient(45deg,rgba(42,167,160,.08) 0 2px,transparent 2px 18px)',o:'✧',h:SER,s:SC}],
+ ['hitam','Hitam Emas','#121212','#f2e9d0','#c9a24b','#1c1c1c',{g:'linear-gradient(160deg,#1c1c1c,#0b0b0b)',p:'repeating-linear-gradient(45deg,rgba(201,162,75,.07) 0 1px,transparent 1px 20px),repeating-linear-gradient(-45deg,rgba(201,162,75,.07) 0 1px,transparent 1px 20px)',o:'◆',h:PF,s:SC}],
+ ['anggur','Anggur','#f6e8ec','#4a1426','#9c2f52','#fff6f8',{g:'linear-gradient(165deg,#fff6f8,#efc9d4)',p:'radial-gradient(circle at 92% 6%,rgba(156,47,82,.16) 0 70px,transparent 71px),radial-gradient(circle at 6% 94%,rgba(156,47,82,.14) 0 100px,transparent 101px)',o:'❁',h:PF,s:SC}]
+];
+NT.forEach(([id,nm,bg,ink,ac,cd,x])=>{TH.push([id,nm,bg,ink,ac,cd]);X[id]=x;
+ const b=document.createElement('button');b.type='button';b.dataset.t=id;b.innerHTML='<i class="sw"></i>'+nm;
+ const s=b.firstChild;s.style.background=x.g;s.style.boxShadow='inset 0 -7px 0 '+ac;$('themes').append(b)});
+O.nikah.push(['mawar','Mawar'],['melati','Melati'],['sulur','Sulur klasik'],['daun','Daun laurel'],['lonceng','Lonceng'],['mahkota','Mahkota']);
+O.aqiqah.push(['kubah','Lengkung masjid'],['geometri','Bintang geometri'],['awan','Awan & bulan'],['teddy','Boneka beruang'],['pita','Pita']);
+O.tanah.push(['teddy','Boneka beruang'],['pohon','Pohon'],['awan','Awan & bulan'],['pita','Pita']);
+O.khitan.push(['kubah','Lengkung masjid'],['geometri','Bintang geometri'],['sulur','Sulur klasik']);
+O.tujuh.push(['melati','Melati'],['mawar','Mawar'],['pita','Pita'],['daun','Daun laurel']);
+O.ultah.push(['mahkota','Mahkota'],['pita','Pita'],['teddy','Boneka beruang'],['awan','Awan & bulan']);
+O.lain.push(['sulur','Sulur klasik'],['daun','Daun laurel'],['geometri','Bintang geometri'],['pohon','Pohon'],['mawar','Mawar']);
+O.nikah.push(['gapura','Gapura bunga'],['arabesk','Arabesk']);O.aqiqah.push(['arabesk','Arabesk']);O.khitan.push(['arabesk','Arabesk']);O.tujuh.push(['gapura','Gapura bunga']);O.ultah.push(['bendera','Bendera pesta'],['konfeti','Konfeti']);O.lain.push(['gapura','Gapura bunga'],['bendera','Bendera pesta'],['konfeti','Konfeti'],['arabesk','Arabesk']);
+for(const k in O){const sn=new Set();O[k]=O[k].filter(x=>!sn.has(x[0])&&sn.add(x[0]))}
+let cac='';
+$('ca').oninput=e=>{cac=e.target.value;render()};
+$('car').onclick=()=>{cac='';render()};
+const _r4=render;render=function(){_r4();if(cac)$('frame').style.setProperty('--t-ac',cac)};
 applyType();
 </script>
 </body>
